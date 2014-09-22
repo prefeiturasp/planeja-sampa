@@ -1,0 +1,1054 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@font-face {
+    font-family: 'merriweatherbold';
+    src: url('../fonts/merriweather-bold.eot');
+    src: url('../fonts/merriweather-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merriweather-bold.woff') format('woff'),
+         url('../fonts/merriweather-bold.ttf') format('truetype'),
+         url('../fonts/merriweather-bold.svg#merriweatherbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'merriweatherheavy_italic';
+    src: url('../fonts/merriweather-heavyitalic.eot');
+    src: url('../fonts/merriweather-heavyitalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merriweather-heavyitalic.woff') format('woff'),
+         url('../fonts/merriweather-heavyitalic.ttf') format('truetype'),
+         url('../fonts/merriweather-heavyitalic.svg#merriweatherheavy_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vag_roundedbold';
+    src: url('../fonts/vag_rounded_bold-webfont.eot');
+    src: url('../fonts/vag_rounded_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/vag_rounded_bold-webfont.woff') format('woff'),
+         url('../fonts/vag_rounded_bold-webfont.ttf') format('truetype'),
+         url('../fonts/vag_rounded_bold-webfont.svg#vag_roundedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'vagRoundedLight';
+	src: url('../fonts/VAGRounded-Light.eot');
+	src: local('☺'), url('../fonts/VAGRounded-Light.woff') format('woff'), url('../fonts/VAGRounded-Light.ttf') format('truetype'), url('../fonts/VAGRounded-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'vagroundedthin';
+    src: url('../fonts/vagrounded-thin-webfont.eot');
+    src: url('../fonts/vagrounded-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/vagrounded-thin-webfont.woff') format('woff'),
+         url('../fonts/vagrounded-thin-webfont.ttf') format('truetype'),
+         url('../fonts/vagrounded-thin-webfont.svg#vagrounded-thinthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'merriweather_sanslight';
+    src: url('../fonts/merriweathersans-light-webfont.eot');
+    src: url('../fonts/merriweathersans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merriweathersans-light-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-light-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-light-webfont.svg#merriweather_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherheavy_italic';
+    src: url('../fonts/merriweather-heavyitalic-webfont.eot');
+    src: url('../fonts/merriweather-heavyitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merriweather-heavyitalic-webfont.woff') format('woff'),
+         url('../fonts/merriweather-heavyitalic-webfont.ttf') format('truetype'),
+         url('../fonts/merriweather-heavyitalic-webfont.svg#merriweatherheavy_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_slab500';
+    src: url('../fonts/museo_slab_500-webfont.eot');
+    src: url('../fonts/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo_slab_500-webfont.woff') format('woff'),
+         url('../fonts/museo_slab_500-webfont.ttf') format('truetype'),
+         url('../fonts/museo_slab_500-webfont.svg#museo_slab500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	overflow-x:hidden;
+	font-family:'merriweather_sanslight', arial, verdana;
+}
+p a{
+	font-size:12px;
+	text-decoration:underline;
+	color:#333132;
+}
+
+#header{
+	background:#312d2e;
+	width:100%;
+	height:112px;
+}
+
+#header .wrap{
+	position:relative;
+}
+
+#header .redesSociais{
+	float: right;
+	width: 254px;
+	height: 40px;
+	position: absolute;
+	top: 48px;
+	right: 58px;
+}
+#header .redesSociais .siga{
+	color:#fff;
+	font-family:'merriweatherheavy_italic', arial;
+	font-size:11px;
+	float:left;
+	font-weight:bold;
+	width:70px;
+	padding:5px 0 0 0;
+}
+
+#header .logo a{
+	background: url(../img/logo.jpg) no-repeat;
+	width:285px;
+	text-indent:-9999px;
+	height:71px;
+	float:left;
+	margin:17px 0 0 0;
+}
+
+#header .logoPrefeitura a{
+	background: url(../img/logoPrefeitura.jpg) no-repeat;
+	width:156px;
+	height:71px;
+	float:left;
+	margin:17px 0 0 0;
+	text-indent:-9999px;
+}
+
+#header .divBusca{
+	float:left;
+	width:213px;
+	height:47px;
+	background:#fff;
+	box-shadow:-1px -7px 14px #000;
+	-moz-box-shadow:-1px -7px 14px #000;
+	-webkit-box-shadow:-1px -7px 14px, #000;
+	margin:85px 0 0 60px;
+	position:relative;
+}
+#header .divBusca input{
+	border:1px solid #ababab;
+	padding:0 0 0 2px;
+	color:#5b5b5b;
+	font-family:'merriweatherheavy_italic', arial;
+	margin:18px 0 0 8px;
+	height:20px;
+	width:194px;
+}
+#searchsubmit{
+	width:18px !important;
+	height:23px;
+	float:left;
+	background:url(../img/icoBusca.gif) left no-repeat;
+	text-indent:-9999px;
+	border:none !important;
+	position:absolute;
+	top: 1px;
+	left: 175px;
+	cursor: pointer;
+}
+
+.social{
+	margin:25px 0 0 0;
+}
+.divNews .newsletter-submit{
+	background:url(../_html/img/btnOk.gif) no-repeat;
+	width:22px;
+	height:25px !important;	
+	text-indent:-9999px;
+	cursor:pointer;
+	float:left !important;
+	border:none !important;
+	margin:0px 0 0 -5px !important;
+	font-family:'merriweatherheavy_italic', arial;
+}
+
+#header .divNews{
+	float:left;
+	width:213px;
+	height:47px;
+	background:#fff;
+	box-shadow:-1px -7px 14px #000;
+	-moz-box-shadow:-1px -7px 14px #000;
+	-webkit-box-shadow:-1px -7px 14px, #000;
+	margin:85px 0 0 3px;
+}
+
+#header .divNews input{
+	border:1px solid #ababab;
+	padding:0 0 0 3px;
+	color:#5b5b5b;
+	font-family:'merriweatherheavy_italic', arial;
+	margin:0 0 0 8px;
+	float:left;
+	height:21px;
+}
+
+#slider{
+	margin:87px 0 0 0;
+	text-align:center;
+	
+}
+
+#slider .legenda{
+	width:670px;
+	height:100px;
+	position:absolute;
+	right:130px;
+	bottom:80px;
+	background:#161411;
+	opacity:0.9;
+	color:#fff;
+	font-family:'vagroundedthin', arial;
+	font-size:26px;
+	padding:15px 15px 0 0;
+	text-align:right;
+	line-height:40px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	
+}
+
+#slider .legenda strong{
+	color:#e40421;
+}
+
+#slider a.saiba{
+	width:218px;
+	height:40px;
+	color:#fff;
+	border:1px tranparent solid;
+	font-family:'merriweatherheavy_italic', arial;
+	position:absolute;
+	right:130px;
+	bottom:12px;
+	text-decoration:none;
+	background: url(../img/icoSaiba.gif) 180px  12px no-repeat #161411;
+	opacity:0.9;
+	padding:9px 0 0 0;
+	font-size:23px;
+}
+
+#slider a.saiba:hover{
+	border:1px solid #e40421 !important;
+}
+
+
+#menu .nav{
+	width:100%;
+	border-bottom:1px solid #333132;
+	float: left;
+	padding:10px 0 0 22px;
+}
+
+#menu .nav li{
+	list-style:none;
+	font-family:'merriweatherheavy_italic', arial, verdana;
+	position:relative;
+}
+
+#menu .nav li a{
+	text-decoration:none;
+	color:#333132;
+	float:left;
+	padding:8px 10px 8px 10px;	
+}
+#menu .nav li a.ativo{
+	background:#e40421;
+	padding:8px 10px 8px 10px;
+	color:#fff;
+}
+
+#menu .nav li a.apresentacao.active{
+	background:url(../img/icoSeta.gif) 125px 5px no-repeat;
+}
+
+#menu .menuDestaques{
+	float: left;
+	padding:10px 0 0 22px;
+}
+
+#menu .menuDestaques li{
+	list-style:none;
+	font-family:'merriweatherheavy_italic', arial, verdana;
+	float:left;
+	width:auto;
+	padding:0 12px 0 0;
+	background:url(../img/icoSeta.gif) right 3px no-repeat;
+	margin:0 15px 0 0;
+}
+#menu .menuDestaques li a{
+	color:#00637d;
+	text-decoration:none;
+	font-size:12px;
+	padding:0 5px 0 0;
+	float:left;
+}
+#menu .submenu{
+	background:#fff;
+	position:absolute;
+	top:20px;
+	left:0;
+}
+
+#menu .submenu li{
+	list-style:none;
+	display:block;
+	float:left;
+	clear:both;
+	padding:5px;
+	width:160px;
+}
+
+#menu .submenu li a{
+	font-size:12px;
+	color:#333132;
+	text-decoration:none;
+	width:95%;
+	float:left;
+	font-weight:bold;
+	border-bottom:1px solid white;
+}
+
+#menu .submenu li a:hover{
+	border-bottom:1px solid #e40421;
+}
+
+#header .divNews span{
+	font-family:'merriweatherheavy_italic', arial;
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+	float:left;
+	width:200px;
+	margin:3px 0 0 8px;
+	color:#333132;
+}
+
+.wrap{
+	width:1004px;
+	margin:0 auto;
+	clear:both;
+}
+
+#menu{
+	width:100%;
+	height:32px;
+}
+#menu ul li{
+	float:left;
+	width:20%;
+	list-style:none;
+}
+.divDestaques{
+	background:#f5f5f5;
+	min-height:430px;
+	width:100%;
+	clear:both;
+	padding:50px 0 0 0;
+}
+.boxDestaque{
+	width:20%;
+	float:left;
+	text-align:center;
+}
+
+.boxDestaque a .programa{ 
+	background:url(../img/icoMetas.jpg) no-repeat;
+	width:154px;
+	height:153px;
+	float:left;
+	text-indent:-9999px;
+	margin:0 0 0 25px;
+}
+
+.boxDestaque a:hover .programa{ 
+	background:url(../img/icoMetas-on.jpg) no-repeat;
+}
+
+.boxDestaque a .plano{
+	background: url(../img/icoPlano.jpg) no-repeat;
+	width:154px;
+	height:153px;
+	float:left;	
+	text-indent:-9999px;	
+	margin:0 0 0 25px;
+}
+.boxDestaque a:hover .plano{
+	background: url(../img/icoPlano-on.jpg) no-repeat;
+}
+.boxDestaque a .leis{
+	background: url(../img/icoLeisOrc.jpg) no-repeat;
+	width:154px;
+	height:153px;
+	text-indent:-9999px;
+	float:left;	
+	margin:0 0 0 25px;	
+}
+.boxDestaque a:hover .leis{
+	background: url(../img/icoLeisOrc-on.jpg) no-repeat;
+}
+.boxDestaque a .diretrizes{
+	background: url(../img/icoLeis.jpg) no-repeat;
+	width:154px;
+	height:153px;
+	float:left;	
+	text-indent:-9999px;	
+	margin:0 0 0 25px;	
+}
+.boxDestaque a:hover .diretrizes{
+	background: url(../img/icoLeis-on.jpg) no-repeat;
+}
+.boxDestaque a .conselho{
+	background: url(../img/icoPlanejamento.jpg) no-repeat;
+	float:left;
+	text-indent:-9999px;
+	width:154px;
+	height:153px;
+	margin:0 0 0 25px;	
+}
+.boxDestaque a:hover .conselho{
+	background: url(../img/icoPlanejamento-on.jpg) no-repeat;
+}
+
+.divDestaques h2{
+	color:#3990bd;
+	font-family:"merriweatherheavy_italic",  Arial, sans-serif;
+	padding:2px 5px 8px 5px;
+	font-size:12px;
+	font-weight:normal;
+	text-transform: uppercase;
+	float:left;
+	clear:both;
+	width:100%;
+	text-align:center;
+}
+
+.divDestaques h2 a{
+	color:#3990bd;
+	text-decoration:none;
+	float:left;
+	clear:both;
+	width:150px;
+	text-align:center;
+}
+.divDestaques a:hover h2{
+	color:#de283e;
+}
+.divDestaques a:hover p{
+	color:#000;
+}
+.divDestaques p{
+	font-family:"vagroundedthin", Arial, Verdana, sans-serif;
+	font-size:12px;
+	padding:15px 5px 0 5px;
+	color:#5f5f5f;
+	float:left;
+	clear:both;
+}
+
+h3{
+	font-family:"vagRoundedLight", arial, verdana;
+	font-size:32px;
+	color:#004356;
+	float:left;
+	width:80%;
+	padding:20px 0 10px 0;
+	font-weight:normal;
+}
+
+a.veja{
+	float:left;
+	text-decoration:none;
+	color:#2e2e2e;
+	font-family:'merriweather_sanslight', arial, verdana;
+	width:20%;
+	font-size:12px;
+	padding:20px 0 0 0;
+}
+
+.boxNoticias{
+	font-family:'merriweather_sanslight', arial, verdana;
+	background:url(../img/bgNoticias.jpg) no-repeat;
+	width:270px;
+	padding:32px;
+	float:left;
+}
+
+.boxNoticias.centro{
+	margin-top:-40px;
+}
+
+.boxNoticias span.data{
+	color:#e50720;
+	font-family:'merriweather_sanslight', arial, verdana;
+}
+
+.boxNoticias h4{
+	color:#303030;
+	font-weight:bold;
+	font-size:16px;
+	float:left;
+	width:280px;
+	padding:5px 0 0 0;
+	font-family:'merriweatherheavy_italic', arial, verdana;
+}
+
+.boxNoticias p{
+	float:left;
+	width:280px;
+	font-size:13px;
+	color:#8d9192;
+	font-family:'museo_slab500', arial, verdana;
+}
+
+.boxNoticias a{
+	text-decoration:none;
+	color:#2e2e2e;
+	font-size:12px;
+	clear:both;
+	float:left;
+	padding:15px 0 0 0;
+	font-family:'merriweatherheavy_italic', arial;	
+}
+
+.divAgenda{
+	width:1054px;
+	height:260px;
+	background:#333132;
+	clear:both;
+	margin:0  auto;
+	font-family:'merriweather_sanslight', arial, verdana;
+}
+
+.divAgenda .boxAgenda{
+	width:270px;
+	padding:32px;
+	float:left;
+	color:#fff;
+	min-height:169px;
+	background: url(../img/bgAgenda.gif) repeat-y right top;
+}
+
+.divAgenda .boxAgenda.last{
+	background:none;
+}
+
+.divAgenda .boxAgenda a h4{
+	text-decoration:none;
+	color:#fff;
+	float:left;
+	clear:both;
+	font-family:'merriweatherheavy_italic', arial;
+}
+
+.divAgenda .boxAgenda a p.endereco{
+	background:url(../img/icoMapa.gif) left top no-repeat;
+	padding:0 0 0 25px;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	float:left;
+	clear:both;
+	margin:15px 0 0 0;
+	font-family:'merriweather_sanslight', arial;
+}
+.divAgenda .boxAgenda a p.horario{
+	background: url(../img/icoHora.gif) left top no-repeat;
+	padding:5px 0 5px 25px;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	margin:15px 0 0 0;
+	float:left;
+	clear:both;
+}
+
+.divAgenda .boxAgenda a span.data{
+	color:#da3e3f;
+	text-decoration:none;
+	padding:8px 0 15px 0;
+	font-size:11px;
+	margin:-22px 0 0 0;
+	float:left;
+}
+
+.divAgenda .boxAgenda a{
+	text-decoration:none;
+}
+
+.divRedes{
+	width:323px;
+	float:left;
+	padding: 0 0 0 9px;
+}
+
+.divRedes h4{
+	color:#e30421;
+	font-size:16px;
+	font-family:'museo_slab500', arial, verdana;
+	text-transform:uppercase;
+	padding:20px 0 0 0;
+	width:311px;
+	text-align:center;
+}
+
+.divRedes .boxRedes{
+	float:left;
+	background:url(../img/bgRedes.gif) no-repeat;
+	width:292px;
+	height:433px;
+	padding:11px 13px 0 15px;
+}
+.divRedes .boxRedes .wp_youtube_gallery h5{
+	font-size:12px;
+	float:left;
+	padding:8px 0 0 0;
+}
+.divRedes .boxRedes .wp_youtube_gallery{
+	padding:0 0 0 8px;
+}
+#footer{
+	background: #312d2e;
+	width: 100%;
+	height: 246px;
+	clear:both;
+	float:left;
+	margin:40px 0 0 0;
+	color:#fff;	
+}
+
+#footer .logosFooter{
+	float:left;
+	width:170px;
+}
+
+#footer .logosFooter img{
+	float:left;
+	clear:both;
+	margin:10px 0 0 0;
+}
+
+#footer .logosFooter img.logoPrefeitura{
+	margin:0 0 0 -23px;
+}
+#footer .menuFooter{
+	float:left;
+	width:465px;
+	margin:21px 0 0 0;
+}
+
+#footer .menuFooter li{
+	list-style:none;
+	display:inline;
+	padding:0 0 0 8px;
+}
+
+#footer .menuFooter li a{
+	text-decoration:none;
+	color:#fff;
+	font-size:13px;
+}
+
+#footer p.secretaria{
+	float:left;
+	width:425px;
+	padding:35px 0 0 20px;
+	font-size:11px;
+	line-height:20px;	
+}
+
+#footer p.conteudo{
+	float:left;
+	padding:0 0 0 20px;
+	width:300px;
+	margin:35px 0 0 0;	
+	font-size:11px;
+	line-height:20px;
+}
+
+#footer .redesSociais{
+	margin:10px 0 0 0;
+	float:left;
+}
+
+#footer .redesSociais span{
+	float:left;
+	margin:20px 10px 0 0;
+	font-size:13px;
+}
+
+#footer .redesSociais img{
+	float:left;
+	margin:8px 0 0 0;
+}
+
+/* Notícias */
+.noticias h1{
+	font-family: "vagRoundedLight", arial, verdana;
+	font-size: 32px;
+	color: #004356;
+	float: left;
+	width: 80%;
+	padding: 20px 0 10px 0;
+	font-weight: normal;
+}
+.blocoNoticias{
+	-webkit-box-shadow: 0px -4px 7px #e6e6e6;
+	-moz-box-shadow: 0px -4px 7px #e6e6e6;
+	box-shadow: 0px -2px 3px #e9e9e9;
+	float:left;
+	clear:both;
+	width:100%;
+	padding:40px 0 0 20px;
+	margin:25px 0 0 0;
+}
+.blocoNoticias .imgnoticias{
+	float:left;
+	margin:0 20px 10px 0;
+	padding:0 0 0 0;
+	-webkit-box-shadow: 2px 5px 4px #e3e3e3;
+	-moz-box-shadow: 2px 5px 4px #e3e3e3;
+	box-shadow: 2px 5px 4px #e3e3e3;
+}
+.blocoNoticias span.data{
+	color:#e40421;
+	font-family:'merriweather_sanslight', arial;
+}
+.blocoNoticias h2{
+	font-family:'merriweatherheavy_italic', arial;
+	color:#2c2c2b;
+	font-size:24px;
+	margin:20px 0 0 0;
+	padding:0 40px 0 0;
+}
+
+.blocoNoticias .leiamais{
+	color:#333132;
+	font-family:'merriweatherheavy_italic', arial;
+	float:left;
+	clear:both;
+	margin:40px 0 0 0;
+	font-size:12px;
+	text-decoration:none;
+}
+
+.blocoNoticias p{
+	color:#636a6e;
+	font-family:'merriweather_sanslight', arial;	
+	font-size:13px;
+	margin:20px 0 0 0;
+	float:left;
+	clear:both;
+	padding:0 20px 0 0;
+}
+
+.blocoNoticiasInterna{
+	-webkit-box-shadow: 0px -4px 7px #e6e6e6;
+	-moz-box-shadow: 0px -4px 7px #e6e6e6;
+	box-shadow: 0px -2px 3px #e9e9e9;
+	float:left;
+	clear:both;
+	width:100%;
+	padding:40px 0 0 0;
+	margin:25px 0 0 0;
+}
+.blocoNoticiasInterna .imgnoticias{
+	float:left;
+	margin:0 20px 10px 0;
+	padding:0 0 0 0;
+	-webkit-box-shadow: 2px 5px 4px #e3e3e3;
+	-moz-box-shadow: 2px 5px 4px #e3e3e3;
+	box-shadow: 2px 5px 4px #e3e3e3;
+}
+.blocoNoticiasInterna span.data{
+	color:#e40421;
+	font-family:'merriweather_sanslight', arial;
+	float:left;
+	clear:both;
+}
+.blocoNoticiasInterna h2{
+	font-family:'merriweatherheavy_italic', arial;
+	color:#2c2c2b;
+	font-size:24px;
+	margin:20px 0 0 0;
+	padding:0 40px 0 0;
+	float:left;
+	clear:both;	
+}
+
+.blocoNoticiasInterna .leiamais{
+	color:#333132;
+	font-family:'merriweatherheavy_italic', arial;
+	float:left;
+	clear:both;
+	margin:40px 0 0 0;
+	font-size:12px;
+	text-decoration:none;
+}
+
+.blocoNoticiasInterna p{
+	color:#636a6e;
+	font-family:'merriweather_sanslight', arial;	
+	font-size:13px;
+	margin:20px 0 0 0;
+	float:left;
+	clear:both;
+	padding:0 20px 0 0;
+}
+.divComentarios{
+	float:left;
+	width:100%;
+	margin:20px 0 0 0;
+	padding:20px 0 0 0;
+}
+.noticias h3.comentario{
+	color:#2c2c2b;
+	font-family:'merriweatherheavy_italic', arial;
+	font-size:24px;
+	margin:35px 0 0 0;
+	-webkit-box-shadow: 0px -4px 7px #e6e6e6;
+	-moz-box-shadow: 0px -4px 7px #e6e6e6;
+	box-shadow: 0px -2px 3px #e9e9e9;
+	width:100%;
+	padding:25px 0 0 0;
+	
+}
+
+.noticias h3.deixe{
+	color:#2c2c2b;
+	font-family:'merriweatherheavy_italic', arial;
+	font-size:24px;
+	margin:35px 0 0 0;
+	width:100%;
+	padding:0 0 0 0;
+	
+}
+
+.noticias .resposta{
+	float:left;
+	width:100%;
+	color:#747474;
+	font-family:'merriweatherheavy_italic', arial;
+	font-size:12px;
+	border:1ps solid #000;
+	height:40px;
+	padding:0 0 0 5px;
+	margin:20px 0 0 0;
+}
+
+.divComentarios p.titulo{
+	font-family:'merriweatherheavy_italic', arial;
+	color:#2c2c2b;
+	font-size:12px;
+}
+.divComentarios p.titulo strong{
+	color:#e40421;
+}
+
+.divComentarios p{
+	font-family:'merriweather_sanslight', arial;
+	float:left;
+	clear:both;
+	font-size:12px;	
+	color:#636a6e;
+	margin:15px 0 0 0;
+}
+
+.divComentarios a{
+	background:url(../img/icoResponder.gif) no-repeat right;
+	float:left;
+	padding:0 13px 0 0;
+	color:#e40421;
+	text-decoration:none;
+	font-size:12px;
+	font-family:'merriweatherheavy_italic', arial;
+	clear:both;
+	margin:25px 0 0 0;
+}
+
+/*AGENDA*/
+.agenda h1{
+	font-family: "vagRoundedLight", arial, verdana;
+	font-size: 32px;
+	color: #004356;
+	float: left;
+	width: 80%;
+	padding: 20px 0 10px 0;
+	font-weight: normal;
+}
+.agenda .divAgendaInterna{
+	background:#333132;
+	width:100%;
+	margin:20px 0 0 0;
+	float:left;
+	padding:0 0 40px 0;
+}
+
+.agenda .divAgendaInterna .blocoAgenda{
+	float:left;
+	background:url(../img/bgBoxAgenda.gif) repeat-x bottom;
+	margin:0 0 0 38px;
+	padding:0 0 30px 0;
+	width:94%;
+}
+
+.agenda .divAgendaInterna .blocoAgenda.last{
+	background:none;
+}
+
+.agenda .divAgendaInterna .blocoAgenda span.data{
+	color:#e40421;
+	font-family:'merriweather_sanslight', arial;
+	font-size:13px;
+	padding:15px 0 0 0;
+	float:left;
+}
+
+.agenda .divAgendaInterna .blocoAgenda h2{
+	color:#fff;
+	font-family:'merriweatherheavy_italic', arial;
+	font-size:24px;
+	clear:both;
+	float:left;
+	padding:8px 0 20px 0;
+}
+.agenda .divAgendaInterna .blocoAgenda p{
+	color: #fff;
+	float: left;
+	clear: both;
+	margin: 0 0 0 0;
+	padding:0 0 15px 0;
+	font-size:14px;
+	font-family: 'merriweather_sanslight', arial;
+}
+.agenda .divAgendaInterna .blocoAgenda p.endereco{
+	background: url(../img/icoMapa.gif) left top no-repeat;
+	padding: 0 0 0 25px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #fff;
+	float: left;
+	clear: both;
+	margin: 15px 0 0 0;
+	display:inline;	
+	font-family: 'merriweather_sanslight', arial;
+}
+.agenda .divAgendaInterna .blocoAgenda p.horario{
+	background: url(../img/icoHora.gif) left top no-repeat;
+	padding: 5px 0 5px 25px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #fff;
+	margin: 15px 0 0 0;
+	display:inline;
+	float: left;
+	clear: both;
+}
+
+.agenda .divAgendaInterna .blocoAgenda a.saibamais{
+	float:left;
+	padding:0 13px 0 0;
+	color:#d64343;
+	text-decoration:none;
+	font-size:12px;
+	font-family:'merriweatherheavy_italic', arial;
+	clear:both;
+	margin:25px 0 0 0;
+}
+
+.agenda .resposta{
+	float:left;
+	width:100%;
+	color:#747474;
+	font-family:'merriweatherheavy_italic', arial;
+	font-size:12px;
+	border:1ps solid #000;
+	height:40px;
+	padding:0 0 0 5px;
+	margin:20px 0 0 0;
+}
+
+/* Perguntas */
+.perguntas h1{
+	font-family: "vagRoundedLight", arial, verdana;
+	font-size: 32px;
+	color: #004356;
+	float: left;
+	width: 80%;
+	padding: 20px 0 10px 0;
+	font-weight: normal;
+}
+
+.perguntas .blocoPerguntas p{
+	float:left;
+	clear:both;
+	color:#333132;
+	padding:5px 0 0 0;
+	font-size:13px;
+}
+.perguntas .blocoPerguntas p strong{
+	font-family:'merriweatherheavy_italic', arial;
+	font-size:12px;
+}
+
+.perguntas .blocoPerguntas h2{
+	float:left;
+	clear:both;
+	font-weight:bold;
+	font-size:14px;
+	color:#333132;
+	padding:12px 0 0 0;
+}

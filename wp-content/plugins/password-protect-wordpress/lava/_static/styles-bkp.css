@@ -1,0 +1,298 @@
+/*
+    This file is NOT covered by the GPL license that covers the PHP files within this plugin. You may not distribute this file except as part of an un-modified plugin without consent from Daniel Chatfield.
+    */
+.clearfix
+{
+    display: block;
+}
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+::-moz-selection {
+    color: #fff;
+    color: rgba(255,255,255,.85);
+    background: #ce4c2d;
+    }
+::selection {
+    color: #fff;
+    color: rgba(255,255,255,.85);
+    background: #ce4c2d;
+    }
+/* Navigation */
+
+.lava-nav
+{
+    position:relative;
+    display:block;
+    padding: 0px 19px;
+}
+.lava-nav::before, .lava-nav::after
+{
+    background:rgba(0,0,0,0.3);
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:4px;
+    z-index:20;
+}
+
+ul.nav
+{
+    display:block;
+    float:left;
+    margin:0px;
+    padding:0px;
+    width:auto;
+    height:40px;
+}
+
+ul.nav li
+{
+    float:left;
+    position:relative;
+    margin:0px;
+    padding:0px;
+}
+ul.nav li a
+{
+    display:inline-block;
+    color:#efc6bc;
+    text-decoration:none;
+    line-height:40px;
+    font-family:'Courier New';
+    font-size:12px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    padding:0px 15px;
+}
+ul.nav li:hover a, ul.nav li.active a
+{
+    color:#ffffff;
+}
+
+ul.nav li:hover::before, ul.nav li.active::before
+{
+    content:"";
+    position:absolute;
+    bottom:4px;
+    border:11px solid transparent;
+    border-top-width:0px;
+    border-bottom-color:rgba(0,0,0,0.3);
+    left: 50%;
+    margin-left: -11px;
+    z-index:21;
+}
+ul.nav li:hover::after, ul.nav li.active::after
+{
+    content:"" !important;
+    visibility:visible;
+    position:absolute;
+    bottom:0px;
+    border:10px solid transparent;
+    border-top-width:0px;
+    border-bottom-color:white;
+    left: 50%;
+    margin-left: -10px;
+    z-index:21;
+}
+ul.nav:hover li.active::before, ul.nav:hover li.active::after
+{
+    visibility:hidden;
+}
+ul.nav:hover li.active:hover::before, ul.nav:hover li.active:hover::after
+{
+    visibility:visible;
+}
+
+ul.nav:hover li.active a
+{
+    color:#efc6bc;
+}
+ul.nav:hover li.active:hover a
+{
+    color:#ffffff;
+}
+.lava-nav::after
+{
+    top:auto;
+    bottom:0px;
+}
+/* Textures */
+.texture
+{
+    background-repeat: repeat;
+    background-position: top center; 
+}
+.texture-lt-red
+{
+    background-image: url(images/texture-lt-red.png);
+    background-color: #ce4c2d;
+}
+.texture-drk-red
+{
+    background-image: url(images/texture-drk-red.png);
+    background-color: #a93d22;
+}
+
+/* Stitching */
+
+.stitch-btm
+{
+    border-bottom: 1px dashed #f1785d;
+}
+
+.stitch-top
+{
+    border-top: 1px dashed #751200;
+}
+
+.stitch-left
+{
+    border-left: 1px dashed #f1785d;
+}
+.stitch-right
+{
+    border-right: 1px dashed #751200;
+}
+
+.stitch-btm-x
+{
+    border-bottom: 1px dashed #751200;
+}
+
+.stitch-top-x
+{
+    border-top: 1px dashed #f1785d;
+}
+
+.stitch-left-x
+{
+    border-left: 1px dashed #751200;
+}
+.stitch-right-x
+{
+    border-right: 1px dashed #f1785d;
+}
+/* Quirks */
+
+.bleed-l-19
+{
+    margin-left:-19px;
+}
+.bleed-r-15
+{
+    margin-right:-15px;
+}
+/* Buttons */
+.lava-btn
+{
+    display:inline-block;
+}
+
+.lava-btn-chunk::before
+{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-box-shadow: #959595 0 2px 5px;
+    -moz-box-shadow: #959595 0 2px 5px;
+    border-radius: 3px;
+    box-shadow: #959595 0 2px 5px;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    padding: 2px 0 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.lava-btn-chunk:active::before
+{
+    padding: 1px 0 0;
+}
+
+.lava-btn-chunk
+{
+    -moz-box-shadow: inset 0 0 0 1px #63ad0d;
+    -webkit-box-shadow: inset 0 0 0 1px #63ad0d;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #eee;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eee), to(#e2e2e2));
+    background: -moz-linear-gradient(#eee, #e2e2e2);
+    background: linear-gradient(#eee, #e2e2e2);
+    border: solid 1px #d0d0d0;
+    border-bottom: solid 3px #b2b1b1;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px #f5f5f5;
+    color: #555;
+    font: bold 12px Arial, Helvetica, Clean, sans-serif;
+    margin: 0 25px 25px 0;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fafafa;
+}
+.lava-btn-chunk:hover
+{
+    background: #e4e4e4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e4e4e4), to(#ededed));
+    background: -moz-linear-gradient(#e4e4e4, #ededed);
+    background: linear-gradient(#e4e4e4, #ededed);
+    border: solid 1px #c2c2c2;
+    border-bottom: solid 3px #b2b1b1;
+    box-shadow: inset 0 0 0 1px #efefef;
+}
+.lava-btn-chunk:active
+{
+    background: #dfdfdf;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dfdfdf), to(#e3e3e3));
+    background: -moz-linear-gradient(#dfdfdf, #e3e3e3);
+    background: linear-gradient(#dfdfdf, #e3e3e3);
+    border: solid 1px #959595;
+    box-shadow: inset 0 10px 15px 0 #c4c4c4;
+    position:relative;
+    top:2px;
+}
+.lava-btn-chunk-yellow
+{
+    background: #feda71;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#feda71), to(#febe4d));
+    background: -moz-linear-gradient(#feda71, #febe4d);
+    background: linear-gradient(#feda71, #febe4d);
+    border: solid 1px #eab551;
+    border-bottom: solid 3px #b98a37;
+    box-shadow: inset 0 0 0 1px #fee9aa;
+    color: #996633;
+    text-shadow: 0 1px 0 #fedd9b;
+}
+.lava-btn-chunk-yellow:hover
+{
+    background: #fec455;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fec455), to(#fecd61));
+    background: -moz-linear-gradient(#fec455, #fecd61);
+    background: linear-gradient(#fec455, #fecd61);
+    border: solid 1px #e6a93d;
+    border-bottom: solid 3px #b98a37;
+    box-shadow: inset 0 0 0 1px #fedb98;
+}
+.lava-btn-chunk-yellow:active
+{
+    background: #f9bd4f;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9bd4f), to(#f0b64d));
+    background: -moz-linear-gradient(#f9bd4f, #f0b64d);
+    background: linear-gradient(#f9bd4f, #f0b64d);
+    border: solid 1px #a77f35;
+    box-shadow: inset 0 10px 15px 0 #dba646;
+}
+.lava-header
+{
+    margin-bottom:10px;
+}

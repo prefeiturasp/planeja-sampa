@@ -1,0 +1,45 @@
+<div class="boxMetas eixo1">
+	<a href="javascript:jQuery.fancybox.close();" class="fechar">fechar X</a>
+	<div class="divFicha">
+		<div class="titulo">
+			<h2><strong>META 19</strong><span>Reformar e ampliar os serviços de 14 Prontos Socorros e 6 AMA-24h existentes, trannsformando-os em UPA</span></h2>
+			<img src="img/icones-objetivos/obj02.png" width="221" height="139" alt="Imagem Meta" class="imgIco" />
+		</div>
+		<h3>Eixo Temático 1. Compromisso com os direitos sociais e civis</h3>
+		<h3>Objetivo temático associado</h3>
+		<p><strong>Objetivo 4.</strong> Ampliar o acesso, aperfeiçoar a qualidade, reduzir as desigualdades regionais e o tempo de espera e fortalecer a atenção integral das ações e serviços de saúde.</p>
+		<h3>secretaria e unidade responsável</h3>
+		<p>Secretaria Municipal da Saúde</p>
+		<h3>articulação territorial associada</h3>
+		<p>Resgate da cidadania nos territórios mais vulneráveis</p>
+		
+		<div class="detalhamento">
+			<h4>Detalhamento da Meta</h4>
+			<div class="detEsq">
+				<h5>Definições de termos técnicos</h5>
+				<p>As Unidades de Pronto Atendimento - UPA 24h: são estruturas de complexidade intermediária entre as UBS e as portas de urgência hospitalares.</p>
+			</div>
+			<div class="detDir">
+				<h5>O que vai ser entregue?</h5>
+				<p>UPA em funcionamento.</p>
+			</div>
+		</div>
+		<h3>Observações</h3>
+		<p>A implatação das UPA nos Pronto Socorros e AMA prevê a modelagem física e estrutural, bem como a organização dos processos de trabalho segundo critérios estabelecidos em conformidade com a Política Nacional de Atenção às Urgências. Esta meta visa adequar 20 serviços nesta modelagem.</p>
+		<h3>custo total da meta</h3>
+		<p>RS 226 mil</p>
+		<h3>cronograma de entrega</h3>
+		<p>2013-2014</p>
+		<p>20 unidades da rede hora certa.</p>
+	</div>
+	<form>
+		<fieldset>
+			<legend>Deixe seu comentário</legend>
+		<fieldset>
+		<input type="text" title="nome" class="defaultText inputSimples" />
+		<input type="text" title="email" class="defaultText inputSimples" />
+		<textarea></textarea>
+		<p class="comentarios"><strong>46</strong> <span>comentários</span></p>
+		<input type="button" value="enviar" class="enviar" />
+	</form>
+</div>

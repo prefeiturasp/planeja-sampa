@@ -1,0 +1,10 @@
+*~
+.project
+.settings
+.buildpath
+.metadata
+apigen
+documentation
+dist
+node_modules
+Gruntfile.js

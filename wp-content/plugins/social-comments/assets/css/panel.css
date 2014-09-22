@@ -1,0 +1,12 @@
+li[id=gplus]{ 
+  border: 1px dashed red;
+  background-color: grey;
+}
+li[id=wp]{ 
+  border: 1px dashed red;
+  background-color: black;
+}
+li[id=facebook]{ 
+  border: 1px dashed red;
+  background-color: blue;
+}

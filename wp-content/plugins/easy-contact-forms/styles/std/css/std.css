@@ -1,0 +1,987 @@
+div.disableall{
+  position: absolute;
+  background: url(../images/wait.gif) center center no-repeat #eee;
+  -moz-opacity: .20;
+  opacity: .20;
+  filter: alpha(opacity=20);
+  z-index: 400;
+  display: none
+}
+table{border: 0;padding: 0;border-collapse: collapse;}
+td{border: 0;padding: 0;margin: 0;;vertical-align:middle}
+
+#divEasyContactForms {
+  padding: 5px;
+  width:890px;
+  line-height:1em !important;
+  font-size:1em !important;
+}
+
+#divEasyContactForms select, #divEasyContactForms textarea, #divEasyContactForms input{background:#fff url(../images/backgrounds.png) 0 -168px repeat-x}
+#divEasyContactForms select, #divEasyContactForms input{height:20px !important;padding:2px !important; font-size:12px !important}
+#divEasyContactForms label{width: 100px;display:block;clear:right;color:#444;margin:8px 0 3px 0;white-space:nowrap;font-size:1.1em !important;}
+#divEasyContactForms legend{color: #555; font-weight:bold !important; white-space: nowrap;font-size:1em !important;text-align:middle;}
+#divEasyContactForms table{margin:0;padding: 0;border-collapse: collapse;}
+#divEasyContactForms tr{padding: 0}
+#divEasyContactForms input, 
+#divEasyContactForms select{
+  font-size:12px !important;
+  line-height:20px !important;
+  padding:0px !important;
+  font-family: arial;
+  height:20px  !important;
+}
+#divEasyContactForms input{
+  height:18px !important;
+} 
+#divEasyContactForms th{
+	height:20px !important;
+	font-size:12px !important;
+  	line-height:1em !important;
+} 
+#divEasyContactForms fieldset{
+  	border:1px solid #ddd;
+  	padding:10px;
+  	margin-top:5px;
+} 
+
+div.calendar{
+  z-index: 90;
+  border:1px solid transparent;
+}
+
+#divEasyContactForms .icon_reset_dis{background-image: url(../images/reset_dis.png) !important}
+#divEasyContactForms .icon_button_close_dis{background-image: url(../images/cross_16_dis.png) !important}
+
+
+.inputselect, .textinput, .datebox, .ufo-select, .mceLayout, .ufo-y-overflow, .ufo-asinput, div.ufo-input-wrapper{border: 1px solid #dfdfdf}
+.inputselect, .textinput, .datebox, .ufo-select, .ufo-asinput, div.ufo-input-wrapper{margin-bottom:2px;}
+
+
+.warningMessage, .notificationMessage{font-size: 12px;font-weight: bold;}
+.warningMessage{color: #880000;}
+
+.notificationMessage{color: #008800;}
+
+.ufo-message-notification{padding:8px 16px;background:#f7df63;border-radius:8px;border:1px solid #444;}
+.ufo-message-error{padding:8px 16px;background:#f6a78d;border-radius:8px;border:1px solid #444;}
+/*  labels and strings  */
+
+label.ufo-label-top{clear: right;}
+
+.small{font-size: 0.8em;color: #aaa;font-weight: normal;padding: 0 3px 0 3px;}
+
+.anchor, .anchor a, a{color: #1f5184;font-weight: normal;cursor: pointer;font-family: Arial, sans-serif;}
+.anchor:hover, .anchor:focus, .anchor a:hover, .anchor a:focus{color: #1b3a59;}
+
+.formdescriptionspec{color: #000;line-height: 1.1em;font-size: 1.3em;}
+.ufo-mainform .formdescriptionspec{display:none}
+.formdescription{clear:left;color:#111;display:block;font-size:1.1em;}
+
+/*  components  */
+.listpositionmover{border: 0;padding: 0;margin-left: auto;margin-right: auto;}
+.listpositionmover>div{float: left;margin: 0;width: 16px;}
+.listpositionmover>div>div{width: 16px;height: 16px;margin: 0;cursor: pointer;}
+
+
+textarea.textinput{font-size: 12px;padding: 3px;}
+
+/*  buttons  */
+span.button{
+  border-radius: 4px;
+  background1: #3b97cd;
+  background: #eee url(../images/backgrounds.png) 0 -87px repeat-x;
+  border: 1px solid #bbb;
+  line-height: 24px;
+  padding: 0px;
+  float: left;
+  margin: 5px 1px
+}
+span.button span{
+  height: 22px;
+  padding: 0 8px;
+  display: block;
+  border-radius: 4px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid transparent
+}
+span.button a{line-height:22px;}
+span.button:hover, span.button.hover{background: #eee url(../images/backgrounds.png) 0 -111px repeat-x;border-color:#888}
+
+button::-moz-focus-inner{padding: 0 !important;border: 0 none !important;}
+
+div.internalbutton{line-height: 24px;cursor: default;}
+
+button.internalbutton{border:0;height:22px;background-color:transparent;}
+
+span.button a, .ufo-imagebutton a, .ufo-imagebutton a:hover, span.internalimage a, span.internalimage a:hover {
+  background-color: transparent !important;
+  background-repeat: no-repeat  !important;
+  text-decoration:none;
+}
+.ufo-imagebutton a {
+  display:block;
+  width: 21px;
+  height: 21px;
+  margin:0px 1px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-position: center center !important;
+}
+.ufo-imagebutton a:hover{border:1px solid #888 !important;background-color:#f7f7f7 !important;}
+
+
+span.internalimage a{padding-left: 20px;padding-right:4px;background-position: center left !important;color:#333}
+
+a.ufo-mtmlink-button{width: 16px;height: 16px;margin: 1px 0 2px 0;display: block;}
+
+/*  grid  */
+.vtable{
+  width: 100%;
+  border-right: 1px solid #bbb;
+  font-family: Arial,Verdana, Helvetica, sans-serif
+}
+.vtable td, .vtable th{border-bottom: 1px solid #bbc;border-left: 1px solid #aab;padding: 1px 5px;}
+.vtable th{vertical-align: middle;padding-left:8px;}
+.vtable tr.ufoodd td{background: #f8f8f9;}
+.vtable tr.ufoeven td{background: #fcfcfc;}
+.vtable tr.ufovalightop td{vertical-align: top;}
+.vtable tr.ufohighlight:hover td{background: #f0f4f7;}
+.vtable th{background: #eee url(../images/backgrounds.png) 0 0 repeat-x;border-top: 1px solid #aaa;border-bottom: 1px solid #aaa;border-right:1px solid #ccc;text-align: left;}
+.vtable th.ufo-active,.vtable th:hover{background: #eee url(../images/backgrounds.png) 0 -19px repeat-x;}
+.vtable a:hover{background-color:transparent !important;color:#1f5784 !important;}
+
+.innerview .vtable{width: 100%;}
+.innerview div.viewtable{overflow-x: auto;overflow-y: auto;background: #fff;}
+
+.mtmview{border: 1px solid #dedede;padding: 0 1px;}
+
+.ufo-y-overflow{overflow: auto;}
+.ufo-y-overflow label.ufo-cform-label {font-weight:bold}
+.ufo-y-overflow>div{width: 95% !important;height: 100%;padding: 10px; text-align:justify;font-size:10px;}
+.ufo-overflow-wrapper{width: 100%;height: 100%;overflow: auto;}
+
+
+.scrollerpanel{float: left;margin-left: 2px}
+
+.scrollerpanel>div, .scrollerpanel table, .scrollerpanel table tr, .scrollerpanel table td {
+  border:0 !important;
+  margin:0 !important;
+  padding:0 !important; 
+  background:transparent !important;
+  float:left !important;
+} 
+.scrollerpanel table{border-collapse:collapse !important;}
+.scrollerpanel span.label {padding:0px 3px;line-height:22px;font-size:0.9em;color:#333}
+.scrollerpanel select.scrollerlist{padding:2px 2px 2px 0;margin:1px 3px;height:22px;width:42px;border:1px solid #bbb;border-radius:2px;}
+.scrollerpanel select:hover{border-color:#888;}
+
+
+.ufo-tableheader, .vtable th{
+  font-size: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+  padding-bottom: 1px;
+  color: #000;
+  text-shadow: #fff 1px 1px 1px
+}
+.ufo-tableheader{cursor: pointer;padding: 0;margin: 0;border: 0;height: 16px;background: transparent;}
+.ufo-tableheader.ufo-active{color: #fff;text-shadow:#000 1px 1px 2px;}
+.ufo-tableheader:hover span.thtext, .ufo-tableheader.ufo-active:hover span.thtext{text-decoration: underline;}
+
+button.ufo-tableheader:focus, button.ufo-tableheader.ufo-active:focus, .ufomenuwrapper a:focus{outline: none;}
+button.ufo-tableheader:hover{background-color:transparent !important; border:0 !important;}
+button.ufo-tableheader span.thimage{display: inline-block;width: 8px;height: 16px;margin-left:3px;}
+button.thacs span.thimage{background: url(../images/sort_up.png)  center center no-repeat;}
+button.thdesc span.thimage{background: url(../images/sort_down.png) center center no-repeat;}
+
+.ufofilterbutton span.button{float: right;}
+
+.ufo-filter>div {float:right} 
+.ufo-filter>div>div, .ufo-filter>div>div>div div{float: left;}
+.ufo-filter>div>div>div{width: 295px;margin: 1px;margin-left: 5px;height: 20px;}
+.ufo-filter input, .ufo-filter select{margin: 0;float: left;}
+.ufo-filter select.ufo-filtersign{width: 55px !important;margin-right: 1px;float: left;}
+.ufo-filter label{width: 80px;float: left;color: #111 !important;margin-top: 3px !important;}
+.ufo-filter{padding: 5px 15px 15px 5px;margin-top: -3px;}
+.ufo-filter{background: #eaeaea;color: #333;border: 1px double #c7c7c7;border-top:0;width: 700px;}
+.ufo-filter{z-index: 20;position: absolute;display: none;border-radius: 0 0 5px 5px;}
+.ufo-filter .ufofilterbutton{clear: both;}
+
+.mtmview .ufo-filter{width: auto;padding: 10px;float: right;}
+.mtmview .ufo-filter label{width: auto !important;padding-right: 5px;}
+.mtmview .ufo-filter select.ufofiltersign{clear: none;}
+.mtmview .ufo-filter >div>div>div{clear: both;width: auto;height: auto;float: right;}
+.mtmview .ufo-filter .ufofilterbutton{float: none;}
+
+div.buttons{border:1px solid #aaa;background:#eee url(../images/backgrounds.png) 0 -41px repeat-x;margin:1px 0;padding:1px 0}
+
+.ufo-tab-wrapper{background:#fff;border: 1px solid #bbb;}
+.ufo-tabs .ufo-tab-wrapper{margin-top:0;}
+.ufo-tab-wrapper.ufo-tab-top{border-top: 1px solid transparent;}
+.ufo-tab-wrapper.ufo-tab-left{margin-left: 130px;overflow: hidden;}
+
+/*  tabs  */
+ul.ufo-tab-header{padding: 0;list-style:none !important;}
+ul.ufo-tab-header ul, ul.ufo-tab-header li{list-style:none !important;}
+ul.ufo-tab-header.ufo-tab-top{
+  padding: 2px 0 0 2px;
+  margin: 5px 0 0 0 !important;
+  height: 31px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ccc;
+  border-radius: 3px 3px 0 0
+}
+
+.ufo-tabs .ufo-tab-header.ufo-tab-top{
+  border-color: #ccc;
+  background: #f6f6f6;
+  margin1: -3px;
+  margin-bottom: 0;
+}
+
+ul.ufo-tab-header li{margin: 0;padding: 0;}
+ul.ufo-tab-header.ufo-tab-top>li{margin-bottom: -1px;float: left;}
+
+ul.ufo-tab-header li a{display: block;text-decoration: none;outline:none;text-shadow: #fff 1px 1px 1px;}
+
+ul.ufo-tab-header.ufo-tab-top > li >a{
+  line-height: 30px;
+  z-index: 10;
+  padding: 0px 10px 0px 10px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  margin-left: 1px;
+  margin-bottom: 0;
+}
+ul.ufo-tab-header.ufo-tab-top> li > a:hover{background: #f8f8f8;color: #555;border-color: #ddd;}
+ul.ufo-tab-header.ufo-tab-top> li > a.ufo-active, 
+ul.ufo-tab-header.ufo-tab-top > li > a.ufo-active:hover{
+  background: #fff !important;padding-bottom: 1px;z-index: 10;color: #555 !important;border-color: #bbb;outline: none;}
+
+ul.ufo-tab-header.ufo-tab-left{
+  float: left;
+  width: 130px;
+  margin:0;
+  margin-right: -1px;
+  border-right: 1px solid transparent;
+  padding-top:5px;
+}
+
+ul.ufo-tab-header.ufo-tab-left > li> a{
+  border: 1px solid transparent;
+  margin-bottom: 1px;
+  border-radius: 4px 0 0 4px;
+  font-size:12px !important;
+  outline:none;
+  padding: 15px 10px;
+}
+
+
+ul.ufo-tab-header.ufo-tab-left > li > a:hover{
+  color: #555 !important;
+  background: #f8f8f8 !important;
+  border-color: #ddd;
+  border-right: 1px solid transparent;
+}
+
+ul.ufo-tab-header.ufo-tab-left > li > a.ufo-active, ul.ufo-tab-header.ufo-tab-left > li > a.ufo-active:hover{
+  color:#555 !important;
+  background:#fff !important;
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #bbb;
+  z-index: 10;
+  padding:0;
+  margin-right:-1px;
+}
+ul.ufo-tab-header.ufo-tab-left > li > a.ufo-active > span, ul.ufo-tab-header.ufo-tab-left > li > a.ufo-active:hover >span{
+  display:block;
+  padding: 14px 9px;
+  border-radius: 4px 0 0 4px;
+
+  color:#555 !important;
+  background:#fff !important;
+  border-top: 1px solid #f8f8ff;
+  border-left: 1px solid #eef;
+  border-right: 0;
+  border-bottom: 1px solid #eef;
+  z-index: 10;
+  margin-right:-1px;
+}
+
+
+.ufo-tabs{display: none;padding:5px 15px 1px 15px;}
+.ufo-tabs .ufo-tabs{padding:5px 0px;}
+.ufo-tabs.ufo-view{padding:4px;}
+
+.ufo-tabs.ufo-active{display: block;}
+
+.ufo-float-left{float: left;display: block;}
+.ufo-float-right{float: right;display: block;}
+.ufo-width50{width: 49%;}
+.ufo-float-right.ufo-width50{width: 50%;}
+.ufo-width50>div{padding: 0 5px;}
+
+div.ufo-clear{clear: left;height: 1px;overflow: hidden;}
+div.ufo-clear-both{clear: both;height: 1px;overflow: hidden;}
+/*  trigger field elements  */
+.ufo-input-wrapper{
+  position: relative;
+  padding: 0 !important;
+  padding-right: 24px !important;
+  overflow: hidden;
+  margin:0;
+  background: #eee url(../images/backgrounds.png) 0 -40px repeat-x;
+  border-radius: 0 3px 3px 0;
+}
+.ufo-input-wrapper:hover{background: #eee url(../images/backgrounds.png) 0 -111px repeat-x;}
+.ufo-input-wrapper .ufo-asinput, input.ufo-internal{
+  width: 100%;
+  margin: 0 !important;
+  border:0  !important;border-radius:0  !important;
+  border-right:1px solid #ccc !important
+}
+.ufo-triggerbutton{height: 100%;width: 16px;position: absolute;top: 0;right: 4px;display: block;background-repeat:no-repeat;background-position:center center}
+.ufo-triggerbutton, a.ufo-triggerbutton, a.ufo-triggerbutton:hover, a.ufo-triggerbutton:focus{text-decoration: none;}
+
+.commonbutton{
+  width: 16px;
+  height: 16px;
+}
+.commonbutton .ufo-triggerbutton{margin-left: 1px;}
+
+/*  split page layout  */
+.ufo-split{margin: 0 auto;margin-top:5px;border-top:1px solid #fff;border-radius:4px 4px 0 0;}
+.ufo-split div.ufosp_header div.ufospl h3{
+  font-family: Arial, Verdana, Helvetica, sans-serif; 
+  margin: 0 !important;
+  padding: 5px 20px;
+  font-size: 12px;
+  text-shadow: #fff 1px 1px 1px;
+  font-weight:normal !important;
+  background-color:#dddde8;
+  border:1px solid #aaa;
+  border-radius:4px 4px 0 0;
+}
+.ufo-split div.ufosp_body div.ufospl div.ufospl div.ufospl{
+  font-family: Arial, Verdana, Helvetica,sans-serif;
+  margin: 0;
+  padding: 5px 10px 10px 10px;
+}
+.ufo-split.ufo-formpage{background: #f4f4f4}
+.ufo-split.ufo-formpage div.ufosp_header{background: #f4f4f4;}
+.ufo-split.ufo-formpage div.ufosp_body{border:1px solid #bbb; border-top:1px solid #fff;border-radius: 0 0 4px 4px;}
+
+/*  menu  */
+div.menupanel{
+  position: relative;
+  background: #eee url(../images/backgrounds.png) 0 -135px repeat-x;;
+  height: 28px;
+  padding: 2px;
+  padding-left: 10px;
+  margin: 0;
+  border: 1px solid #aaa;
+  border-radius: 5px
+}
+
+.ufomenuwrapper{position: relative;width: 100%;}
+.ufomenuwrapper ul{margin-bottom:0 !important;margin-top:-8px !important;padding:2px !important;}
+.ufomenuwrapper ul.ufoMenu li a {color: #222;padding: 1px 9px;font-size: 15px;border: 1px solid transparent;line-height:24px;}
+.ufomenuwrapper ul.ufoMenu li a:hover, .ufomenuwrapper ul.ufoMenu li.ufo-active a{
+  border-radius: 7px;
+  background: #eee url(../images/backgrounds.png) 0 -87px repeat-x;
+  color: #222;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+.ufomenuwrapper ul li ul li a {
+  background-image: none;
+  border:1px solid red;
+}
+.ufomenuwrapper ul.ufoMenu li a.ufoemptymenu:hover, .ufomenuwrapper ul.ufoMenu li.ufo-active a.ufoemptymenu{cursor: default;}
+
+.ufomenuwrapper ul.ufoMenui li a,
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui li a,
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui li.ufo-active ul.ufoMenui li a
+{
+  padding: 2px;
+  padding-left: 11px;
+  line-height:18px;
+  font-size: 12px;
+  border-radius: 0;
+  width: 150px;
+  background-image:none;
+  background:#fafafa;
+  border: 1px solid transparent
+}
+
+.ufomenuwrapper ul.ufoMenui li a:hover,
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui li.ufo-active a,
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui li.ufo-active ul.ufoMenui li.ufo-active a
+{border-radius: 5px;background: #eee !important;border: 1px solid #aaa;font-weight:normal;}
+
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui
+{padding: 3px;border-radius: 3px;background: #fff !important;border: 1px solid #aaa;z-index: 30;}
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui li.ufo-active ul.ufoMenui
+{padding: 3px;border-radius: 3px;background: #fff !important;border: 1px solid #aaa;z-index: 31;}
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui li.ufo-active ul.ufoMenui a 
+{padding: 3px;border-radius: 3px;background: #fff !important;border: 1px solid transparent;z-index: 30;}
+
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui,
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui li.ufo-active ul.ufoMenui
+{border: 1px solid #aaa;}
+
+.ufomenuwrapper ul.ufoMenu li.ufo-active ul.ufoMenui li.ufo-active ul.ufoMenui{border-top: 1px solid #aaa ;z-index: 31;}
+
+.ufomenuwrapper ul.ufoMenui li span{display: block;width: 150px;}
+.ufomenuwrapper ul.ufoMenui{
+  width: 165px;
+  padding: 3px;
+  border-radius: 3px;
+  background: #ddd;
+  border: 1px solid transparent;
+  z-index: 30
+}
+
+.ufomenuwrapper ul.ufoMenui li a.ufocontainer span{background: url(./../images/arrow-menu-container.png) right center no-repeat;}
+.ufomenuwrapper ul, .ufomenuwrapper ul li{margin: 0;padding: 0;display: inline;list-style: none;}
+
+.ufomenuwrapper ul li{float: left;position: relative;zoom: 1;}
+.ufomenuwrapper ul li a{display: block;margin:0;text-decoration: none;}
+.ufomenuwrapper ul li ul{display: none;position: absolute;top: 36px;}
+.ufomenuwrapper ul li ul li{display: block;border-top: 0px;}
+.ufomenuwrapper ul.ufoMenui ul.ufoMenui{top: 6px !important;left: 162px !important;}
+.ufomenuwrapper li.left ul.ufoMenui ul.ufoMenui{margin-top: -38px;margin-left: -170px;}
+.ufomenuwrapper ul.ufoMenu li > ul{margin-top: -10px;}
+
+
+/*  auto suggest list  */
+div.autosuggest{
+  position: absolute;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 3px;
+  z-index: 100
+}
+div.autosuggest ul{list-style: none;margin: 0 0 -4px 0;padding: 0;overflow: hidden;background-color: #eee;border-radius:4px;border:1px solid #b5b5b5}
+div.autosuggest ul li{padding:5px;margin: 1px 2px;text-align: left;border:1px solid #ddd}
+div.autosuggest ul li a{
+  color: #333;
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+  width: 100%
+}
+div.autosuggest ul li a:hover, 
+div.autosuggest ul li.as_highlight a, 
+div.autosuggest ul li.as_highlight a:hover {background-color: #f3f3f3}
+
+div.autosuggest ul li a span{display: block;padding: 0;font-weight: bold;}
+div.autosuggest ul li a span>div {font-weight: normal;padding:0;color: #222;overflow:hidden;}
+div.autosuggest ul li.as_highlight a span{background-position: bottom left;background-repeat: no-repeat;}
+div.autosuggest ul li.as_highlight a span>div{color: #000;}
+
+div.autosuggest ul li.as_warning{font-weight: bold;text-align: center;padding-top:4px;}
+div.autosuggest ul em{font-style: normal;color: #a22;}
+
+span.ufo-id-link {cursor:pointer;}
+
+div.ufo-as-info{
+  display: none;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  color: #003;
+  text-shadow: #fff 1px 1px 1px;
+  border-radius: 2px;
+  
+  position: absolute;
+  z-index: 100;
+  padding: 2px;
+  margin: 0 3px;
+}
+
+div.ufo-as-info>div{
+  height:100%;
+  padding:0;
+  border:1px solid #ddd;
+}
+
+.ufo-as-form label {
+  text-shadow: #fff 2px 2px 2px;
+  display:block;
+  overflow:hidden;
+  font-weight:normal;
+  font-size:10px;
+  width:70px;
+  white-space:nowrap;
+  float:none;
+  margin:0;
+  margin-top:3px;
+}
+
+.ufo-as-info-img{
+  float:left;
+  padding-right:10px ;
+  padding-bottom:5px ;
+  display:block;
+  margin-left:-2px;
+  background:#f5f5f5;
+  border-radius:3px;
+}
+
+.ufo-as-form {padding:7px;text-align:left}
+.ufo-as-form>div {padding:1px;font-size:10px;border-bottom:1px solid #ddd;}
+.ufo-as-form>div span.formdescription{font-size:12px;font-weight:bold}
+
+.ufo-user-list-item{height:90px;overflow:hidden;}
+.ufo-user-list-item .ufo-as-info-img{
+  height:86px;  
+  background:#eee;
+  float:left;
+  padding:2px 5px;
+  display:block;
+}
+div.autosuggest .ufo-as-list-hidden{display:none}
+li.as_highlight .ufo-as-info-img, li a:hover .ufo-as-info-img{background:#f2f2f2;}
+
+/* layout classes */               
+ul.ufo-kb-readonly{list-style:none !important;margin:0;padding:0 !important;border:1px solid #ccc;border-bottom:1px solid #fff;}
+ul.ufo-kb-readonly>li>h3{padding-bottom:10px;margin:0}
+ul.ufo-kb-readonly>li{
+  margin:0 !important;
+  text-align:justify;
+  padding:10px 20px !important;
+  border:1px solid #fff;
+  border-bottom:1px solid #ccc;
+}
+ul.ufo-kb-readonly>li:hover{background:#fcfcfc}
+
+.ufo-split.ufo-readonlyview {margin: 0 auto;border-radius:4px 4px 0 0;}
+.ufo-split.ufo-readonlyview div.ufosp_body div.ufospl div.ufospl div.ufospl{
+  margin: 0;
+  padding: 0;
+}
+
+.ufo-users.ufo-as-form {width:300px;}
+.ufo-as-form.ufo-customformsentries{max-height:300px;width:300px;overflow:hidden}
+.ufo-as-form.ufo-customformsentries label {width:auto;}
+
+
+.ufo-simple {width:600px;}
+
+
+.ufo-customformsentries label{
+	font-weight:bold;
+}
+
+.ufo-fields-invalid-value {
+	background:#fdd; 
+	border:1px solid #800; 
+	color:#800;
+	padding:8px;
+	border-radius:6px;
+	z-index:20;
+}
+
+.ufo-fields-invalid-field {
+	background:#fee; 
+	border:1px solid #800; 
+	color:#800;
+}
+
+
+.ufo-filter>div>div>div{width: 315px;}
+div.ufo-customforms div.ufo-filter label {width:120px}
+
+textarea.ufo-style-sheet-text {
+	padding:10px;
+	font-size:14px !important;
+	line-height:1.2em !important;
+	background:url(none) !important;
+}
+
+/* custom forms */
+div.ufo-customform-designer-div {
+	background:#fbfbff;
+	padding:1px !important;
+}
+
+div.ufo-customform-designer-div div.buttons {
+	border-radius:3px;
+	margin:1px;
+	margin-bottom:5px;
+}
+#ufo-field-type-buttons {
+	margin-top:2px;
+}
+
+
+div.ufo-customform-fieldform-fieldset-hidden {display:none;}
+
+div.ufo-customform-fieldform-fieldset{
+	border: 1px solid #aaa;
+	padding:10px;
+	margin:15px 5px;
+	position:relative;
+	border-radius:3px;
+}
+
+div.ufo-customform-fieldform-fieldset .inputselect, 
+div.ufo-customform-fieldform-fieldset .textinput, 
+div.ufo-customform-fieldform-fieldset .ufo-select 
+{border: 1px solid #bbb}
+
+div.ufo-customform-fieldform-fieldset label {text-shadow: #fff 1px 1px} 
+
+div.ufo-customform-fieldform-fieldset div.ufo-customform-fieldform-fieldset{
+	margin:0;
+	margin-top:10px;
+}
+
+div.ufo-customform-fieldform-fieldset.ufo-fieldset-collapsed{
+	border: 0;
+	padding: 3px;
+}
+
+
+div.ufo-customform-fieldform-fieldset-legend{
+	clear: both;
+	float: none;
+	position: absolute;
+	top: -8px;
+	left: 8px;
+	padding: 0 5px;
+	background: #f2f2f2;
+}
+
+div.ufo-customform-fieldform-fieldset-legend div{
+	clear: both;
+	float: none;
+	position: relative;
+	padding-left:35px;
+}
+
+div.ufo-customform-fieldform-fieldset-legend span{
+	padding-left1:10px;
+}
+
+div.ufo-customform-fieldform-fieldset-legend div input {
+	position: absolute;
+	margin:0;
+	top: 0px;
+	left: 15px;
+}
+div.ufo-customform-fieldform-fieldset-legend div label {
+	display: block;
+	width:auto;
+}
+span.ufo-customform-fieldform-fieldset-legend-label {
+	padding-left:12px;
+	line-height:16px;
+}
+
+.ufo-customform-fieldform-fieldset-expander {
+	display:block;
+	float:left;
+	width:10px;
+	height:10px;
+	position:absolute;
+	left: 0;
+	top: 2px;
+	margin-left:3px;
+	cursor:pointer;
+	z-index:10;
+	background-image: url(../images/expander-collapsed.png);
+	background-repeat:no-repeat;
+	background-position:center center;	
+}
+.ufo-customform-fieldform-fieldset-expander.ufo-fieldset-expanded {
+	background-image: url(../images/expander-expanded.png) !important
+}
+
+
+.ufo-customform-fieldform-pinned {
+	background-image: url(../images/pinned.png) !important
+}
+
+.ufo-customform-fieldform-uppinned {
+	background-image: url(../images/unpinned.png) !important
+}
+
+div.ufo-customform-settings-form {
+	position:relative;
+	top:0;
+	left:0;
+	color:#333;
+  	background: #f2f2f2 url(../images/fldbackground.png) 0 0 repeat-x;
+	border:1px solid #aaa;
+	border-radius:3px;
+}
+
+div.ufo-customform-settings-form div.buttons {
+	margin:1px;
+}
+
+ul.ufo-customform-fieldform-option-ul{
+	padding: 2px;
+}
+
+ul.ufo-customform-fieldform-option-ul li {
+	border:1px solid #ccc;
+	list-style:none;
+	padding:1px;
+	padding-left:20px;
+	padding-right:56px;
+	border-radius:5px;
+	margin:2px 5px 0 5px;
+	background:#f9f9f9;
+	cursor:pointer;
+	clear:left;
+	position:relative;
+}
+
+ul.ufo-customform-fieldform-option-ul li a.ufo-customform-option-add, 
+ul.ufo-customform-fieldform-option-ul li a.ufo-customform-option-delete,
+ul.ufo-customform-fieldform-option-ul li input.ufo-customform-option-default{
+	display:block;
+	height:16px;
+	width:16px;
+	position:absolute;
+	top:3px;
+}
+
+ul.ufo-customform-fieldform-option-ul li.ufo-fieldform-option-single-child a.ufo-customform-option-delete {
+	display:none;
+}
+
+ul.ufo-customform-fieldform-option-ul li a.ufo-customform-option-add{
+	right:50px;
+}
+
+ul.ufo-customform-fieldform-option-ul li a.ufo-customform-option-delete{
+	right:30px;
+}
+
+ul.ufo-customform-fieldform-option-ul li input.ufo-customform-option-default{
+	left:0px;
+	top:0;
+}
+
+ul.ufo-customform-fieldform-option-ul li input.ufo-text{
+	width:100%;
+	margin-bottom:0;
+	border:1px solid transparent;
+	background:transparent;
+}
+
+ul.ufo-customform-fieldform-option-ul li label{
+	clear:none;
+}
+
+
+
+ul.ufo-customform-ul{
+	width:200px;
+	float:right;
+	display:block;
+	border:1px solid #aaa;
+	border-radius:15px;
+	padding:0;
+	padding-bottom:5px;
+	margin-right:10px;
+	margin-top:5px;
+}
+
+ul.ufo-customform-fieldset{
+	background:#f2f2f2;
+}
+
+ul.ufo-customform-fieldlist{
+	bakground:#ccc;
+}
+
+.ufo-customform-field-image {
+	display:block;
+	width:16px;
+	height:16px;
+	float:left;
+	margin-right:3px;
+	margin-top:-2px;
+	
+}
+
+.ufo-customform-field-image div{
+	display:block;
+	margin:0 !important;
+	width:16px;
+	height:8px;
+}
+
+li.ufo-customform-fieldset-filled a.ufo-customform-field-delete {
+	display:none;
+}
+
+
+li.ufo-customform-li{
+	border:1px solid #888;
+	list-style:none;
+	padding:8px;
+	border-radius:15px;
+	margin-top:2px;
+	margin-left:5px;
+	margin-right:5px;
+  	background: #f2f2f2 url(../images/fldbackground.png) 0 0 repeat-x;
+	cursor:pointer;
+}
+
+li.ufo-customform-li:hover {
+  	background: #e0e0e5 url(../images/fldbackground-hover.png) 0 0 repeat-x;
+}
+
+li.ufo-customform-li span:hover {
+	color:#800;
+	text-decoration:underline;
+}
+
+li.ufo-customform-placeholder{
+	border:1px dashed #444;
+	list-style:none;
+	height:40px;
+	border-radius:2px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+	background:transparent;
+}
+
+li.ufo-fieldset-header {
+	margin:0;
+	margin-bottom:10px;
+	border:0;
+	border-bottom:1px solid #ccc;
+	border-radius:15px 15px 0 0;
+}
+
+li.ufo-customform-li.ufo-customform-li-active {
+	border:1px solid #777;
+	border-right:0;
+	border-radius:15px 0 0 15px;
+	background:#fff;
+	margin-right:-2px;
+	z-index:10;
+}
+
+li.ufo-customform-li.ufo-customform-li-active span{
+	padding-right:7px;
+}
+
+
+ul.ufo-customform-ul li.ufo-customform-li.ufo-customform-li-active {
+	margin-right:-12px;
+}
+
+li.ufo-customform-li.ufo-customform-li-active.ufo-li-drag {
+	border:1px solid #ccc;
+	border-radius:15px;
+}
+
+li.ufo-customform-fieldtype span span {
+	padding:1px 1px 1px 20px;
+	background-repeat:no-repeat;
+  	background-position: center left !important;
+}
+
+li.ufo-customform-fieldtype-li,
+li.ufo-customform-fieldtype-li-fs
+{
+	display:block;
+	cursor:pointer;
+	list-style:none;
+  	border-radius: 4px;
+  	background: #eee url(../images/backgrounds.png) 0 -87px repeat-x;
+  	border: 1px solid #aaa;
+  	line-height: 24px;
+  	padding: 0px;
+  	padding-left: 10px;
+  	margin: 2px;
+}
+
+li.ufo-customform-fieldtype-li:hover,
+li.ufo-customform-fieldtype-li-fs:hover
+{
+background: #eee url(../images/backgrounds.png) 0 -111px repeat-x;border-color:#888
+}
+
+li.ufo-customform-fieldtype-li.ufo-customform-fieldtype-disabled {
+	border-color:#ddd;
+}
+
+.ufo-loading {
+  background: url(../images/wait.gif) center center no-repeat #eee;
+  -moz-opacity: .20;
+  opacity: .20;
+  filter: alpha(opacity=20);
+}
+div.ufo-add-pad {
+	padding:5px;
+	line-height:1.2em;
+}
+
+a.ufo-add-pad {
+	padding-right:5px;
+}
+
+ div.ufo-customform-settings-savebutton-div {
+ 	padding-left:10px;
+ 	padding-bottom:5px;
+ }
+/***************** dashboard **************************************************/
+table.ufo-userstatistics tr td {padding: 10px; border:1px solid #ccc;background:#fafafa;}
+.ufo-dashboard-header {font-size:1.1em;padding:5px;display:block;}
+table.ufo-formstatistics tr td {padding: 10px;;background:#fff;}
+.ufo-dashboard .ufo-tab-wrapper{height:143px;}
+.ufo-dashboard .ufo-tab{padding:15px 25px;}
+
+/***************** hints **************************************************/
+span.ufo-label-hint{
+	display:inline-block;
+	height:9px;
+	font-size:9px;
+	font-weight:normal;
+	color:#888;
+}
+span.ufo-label-hint a{
+	color:22f;
+}
+span.ufo-label-hint:hover a{
+	text-decoration:underline;
+}
+span.ufo-settingsform-label-hint {
+	margin-left:5px;
+}
+
+div.ufo-as-hint{
+	padding:5px 10px;
+	padding-left:35px;
+	border-radius:6px;
+	font-size:13px;
+
+  	display: none;
+	background: #fdfdfd url(../images/response.png) 10px center no-repeat;
+  	border: 1px solid #777;
+  	color: #003;
+  	text-shadow: #fff 1px 1px;
+  
+  	position: absolute;
+	z-index: 100;
+  	margin: 0 3px;
+}
+
+div.ufo-div-comment{font-size:12px;border-radius:10px;background:#f8f8f8;overflow:hidden;margin:10px;border:1px solid #ccc;padding-right:10px;}
+div.ufo-div-comment-header{background:#eee;padding:10px;;float:left;margin: 0 10px 0 0;border-radius:0 0 6px 0;}
+div.ufo-div-comment-comment{padding:10px;}

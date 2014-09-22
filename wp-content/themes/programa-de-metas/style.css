@@ -1,0 +1,2010 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.2
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+	
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#444;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+/* header */
+.header {
+	
+}
+/* logo */
+.logo {
+	
+}
+.logo-img {
+	
+}
+/* nav */
+.nav {
+	
+}
+/* sidebar */
+.sidebar {
+	
+}
+/* footer */
+.footer {
+	
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+   
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+   
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+	
+}
+.bypostauthor {
+	
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+
+/*RULES FOR PROGRAMA DE METAS*/
+html , body{
+	height: 100%;
+}
+
+body {
+	font-family: 'Tinos', serif;	
+}
+
+.content {
+	width: 941px;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.content.interna p {
+	font-size: 17px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.content.mapa {
+	width: 973px;
+}
+.wrapper.interna {
+	background: #2f2f2f;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	margin-top: 15px;
+	box-shadow: -1px 10px 11px #cecece;
+}
+
+header h1 {
+	padding: 0;
+	width: 249px;
+	float: left;
+	margin: 0;
+}
+
+header h2 {
+	width: 300px;
+	float: left;
+	margin: 0;
+	font-size: 15px;
+	color: #303030;
+	margin: 5px 0px 0px 29px;
+	font-weight: 700;
+	font-style: italic;
+}
+
+header h2 span {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+#all {
+	width: 100%;
+	background: #f1f1f1;
+	margin: 15px auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#all.interna {
+	width: 98%;
+	margin: 15px auto;
+}
+
+#all .nav {
+	width: 100%;
+	height: 72px;
+	box-shadow: -1px 8px 9px #c4c4c4;
+}
+
+#all .nav ul {
+	padding: 0;
+	margin-top: 28px;
+	float: left;
+	list-style: none;
+}
+
+#all .nav ul li {
+	float: left;
+	display: inline;
+	color: #e5e5e4;
+}
+
+#all .nav ul li a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #2f302f;
+	padding: 0px 12px 0px 12px;
+	font-weight: 400;
+}
+
+#all .nav .social {
+	width: 328px;
+	height: 23px;
+	float: left;
+	margin: 23px 0px 0px 5px;
+}
+
+#all .nav .social .fb {
+	width: 120px;
+	float: left;
+	margin-top: 4px;
+}
+
+#all .nav .social .tw {
+	float: left;
+	margin-top: 3px;
+}
+
+#all .nav .social .gp {
+	float: left;
+	margin: 3px 0px 0px -23px;
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #ccc;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1;
+}
+
+#all .modal {
+	width: 941px;
+	min-height: 1603px;
+	position: absolute;
+	display: none;
+	z-index: 1;
+	background: none;
+}
+
+#all .modal .content {
+	width: 100%;
+	background: #fff;
+}
+
+#all .modal h2 {
+	width: 100%;
+	height: 62px;
+	padding-left: 21px;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;
+}
+
+#all .modal .conteudo {
+	width: 901px;
+	margin: 0 auto;
+}
+
+#all .modal .texto-meta {
+	width: 706px;
+	height: 88px;
+	border-bottom: 3px dashed #f62048;
+	float: left;
+}
+
+#all .modal .conteudo img {
+	display: block;
+	float: right;
+}
+
+#all .modal .texto-meta p {
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 0px 0px 3px 0px;
+	text-transform: uppercase;
+}
+
+#all .modal h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+#all .modal .descricao {
+	font-size: 14px;
+	color: #000;
+	font-weight: 400;
+}
+
+#all .modal .box {
+	width: 99%;
+	height: 403px;
+	border: 1px solid #f62048;
+}
+
+#all .modal .box.cronograma {
+	height: 243px;
+}
+
+#all .modal .box .titulo {
+	text-align: center;
+	margin-top: 14px;
+	text-transform: uppercase;
+}
+
+#all .modal .box .left, #all .modal .box .right {
+	width: 352px;
+	float: left;
+	margin-left: 52px;
+}
+
+#all .modal .box .borda {
+	width: 1px;
+	height: 65%;
+	background: #000;
+	float: left;
+	margin-left: 44px;
+	margin-top: 25px;
+}
+
+#all .modal .box.cronograma .borda {
+	margin-top: 3px;
+}
+
+#all .modal .box .right {
+	float: right;
+	margin-right: 32px;
+}
+
+#all .modal .box h4 {
+	text-transform: none;
+	text-align: center;
+}
+
+#all .modal .box p {
+	text-align: center;
+}
+
+#all .modal .close {
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	text-align: right;
+}
+
+/*EIXO 1*/
+#all .modal .bg {
+	width: 100%;
+	padding: 49px 0px 9px 0px;
+}
+
+#all .modal .texto-meta h2 {
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 30px 0px 0px 22px;
+	float: left;
+}
+
+#all .modal .texto-meta img {
+	margin-top: 8px;
+}
+
+#all .modal .detalhes {
+	width: 898px;
+	margin: 40px auto;
+}
+
+#all .modal .detalhes h4 {
+	font-weight: 700;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+#all .modal .detalhes .info {
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#all .modal .detalhes .detalhamento {
+	width: 898px;
+	height: 403px;
+	margin: 0 auto;
+}
+
+#all .modal .detalhes .detalhamento h4 {
+	text-align: center;
+	padding-top: 19px;
+}
+
+#all .modal .detalhes .detalhamento .informacoes {
+	width: 783px;
+	height: 151px;
+	margin: 32px auto;
+}
+
+#all .modal .detalhes .detalhamento .informacoes .termos {
+	width: 389px;
+	height: 100%;
+	border-right: 1px solid #000;
+	float: left;
+}
+
+#all .modal .detalhes .detalhamento .informacoes .titulo {
+	font-size: 16px;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+}
+
+#all .modal .detalhes .detalhamento .informacoes .info {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#all .modal .detalhes .detalhamento .informacoes .entrega {
+	width: 389px;
+	height: 100%;
+	float: left;
+}
+
+#all .modal .detalhes .cronograma {
+	width: 898px;
+	height: 191px;
+}
+
+#all .modal .detalhes .conteudo {
+	width: 783px;
+	height: 151px;
+	margin: 32px auto;
+}
+
+#all .modal .detalhes .cronograma h4 {
+	text-align: center;
+	padding-top: 19px;
+}
+
+#all .modal .detalhes .cronograma .um {
+	width: 389px;
+	height: 111px;
+	border-right: 1px solid #000;
+	float: left;
+}
+
+#all .modal .detalhes .cronograma .dois {
+	width: 389px;
+	height: 111px;
+	float: left;
+}
+
+#all .modal .detalhes .cronograma .titulo {
+	font-size: 16px;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+}
+
+#all .modal .detalhes .cronograma .info {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+	padding: 0;
+	margin: 0;
+}
+
+/*EIXO 1*/
+#all .modal.eixo-1 h2 {
+	background: #f62048;
+}
+
+#all .modal.eixo-1 .box .borda {
+	background: #f62048;
+}
+/*EIXO 2*/
+#all .modal.eixo-2 {
+	background: none;	
+}
+
+#all .modal.eixo-2 h2 {
+	background: #93d521;
+}
+
+#all .modal.eixo-2 .texto-meta {
+	border-bottom: 3px dashed #93d521;
+}
+
+#all .modal.eixo-2 .box {
+	border: 1px solid #93d521;
+}
+
+#all .modal.eixo-2 .box .borda {
+	background: #93d521;
+}
+
+/*EIXO 3*/
+#all .modal.eixo-3 {
+	background: none;
+}
+
+#all .modal.eixo-3 h2 {
+	background: #12c2d2;	
+}
+
+#all .modal.eixo-3 .texto-meta {
+	border-bottom: 3px dashed #12c2d2;
+}
+
+#all .modal.eixo-3 .box {
+	border: 1px solid #12c2d2;
+}
+
+#all .modal.eixo-3 .box .borda {
+	background: #12c2d2;
+}
+
+#all .modal .comentarios {
+	width: 496px;
+	height: 352px;
+}
+
+#all .modal .comentarios h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	float: left;
+	margin: 0;
+	background: none;
+	height: auto;
+	padding: 0;
+	width: auto;
+}
+
+#all .modal .comentarios .contador {
+	width: 138px;
+	float: right;
+}
+
+#all .modal .comentarios .balao {
+	display: block;
+	width: 28px;
+	height: 27px;
+	background: url(img/sprite.png) no-repeat;
+	float: left;
+}
+
+#all .modal .comentarios .total {
+	display: block;
+	float: left;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 12px;
+	margin-left: 8px;
+	word-spacing: 3px;
+	color: #000;
+}
+
+#all .modal .comentarios .total b {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+#all .modal .comentarios form {
+	float: left;
+	width: 100%;
+}
+
+#all .modal .comentarios form label {
+	font-size: 12px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#all .modal .comentarios form input[type="text"] {
+	width: 100%;
+	height: 27px;
+	border: none;
+}
+
+#all .modal .comentarios form textarea {
+	width: 100%;
+	height: 68px;
+}
+
+#all .modal .comentarios form input[type="submit"] {
+	font-family: 'Montserrat', sans-serif;
+	background: #fff;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #2f302f;
+	border: none;
+	width: 147px;
+	height: 23px;
+	font-weight: 700;
+}
+
+/*EIXO 1*/
+#all .modal.eixo-1 .comentarios h2 {
+	color: #f62048;
+}
+
+#all .modal.eixo-1 .comentarios .balao {
+	background-position: -4px -5px;
+}
+
+/*EIXO 2*/
+#all .modal.eixo-2 .comentarios h2 {
+	color: #93d521;
+}
+
+#all .modal.eixo-2 .comentarios .balao {
+	background-position: -53px -5px;
+}
+
+/*EIXO 3*/
+#all .modal.eixo-3 .comentarios h2 {
+	color: #12c2d2;
+}
+
+#all .modal.eixo-3 .comentarios .balao {
+	background-position: -108px -5px;
+}
+
+#all .logo, .wrapper.interna .logo {
+	margin: 45px auto;
+	width: 242px;
+	height: 43px;
+	padding: 0;
+}
+
+#all .logo-interna {
+	margin-bottom: 49px;	
+}
+
+#all .intro {
+	color: #000;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 57px;
+}
+
+#all .filters {
+	width: 744px;
+	height: 229px;
+	margin: 43px auto;
+}
+
+#all .filters form {
+	width: 100%;
+	height: 100%;
+	margin-left: 42px;
+}
+
+#all .eixos {
+	list-style: none;
+	padding: 0;
+	float: left;
+}
+
+#all .eixos li {
+	margin-bottom: 13px;	
+}
+
+#all .eixos li a {
+	display: table-cell;
+	width: 237px;
+	height: 63px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+#all .eixos li a.current{
+	border: 2px solid #fff;
+}
+
+#all .eixos li a span {
+	display: block;
+	text-align: center;
+}
+
+#all .eixos li a .titulo {
+	color: #000;
+	padding-top: 0px;
+}
+
+#all .eixos li a .descri {
+	font-weight: 700;
+	font-size: 10px;
+	padding-top: 1px;
+	color: #212121;
+}
+
+#all .outros-filtros {
+	width: 237px;
+	float: left;
+	list-style: none;
+	padding-left: 16px;
+}
+
+#all .buscar {
+	width: 236px;
+	float: left;	
+	margin:11px 0px 0px 25px;
+	height: 100%;
+	position: relative;
+}
+
+#all .buscar input {
+	width: 111px;
+	height: 60px;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	background: #c1c1c1;
+	position: absolute;
+	bottom: 15px;
+	font-weight: 700;
+	color: #000;
+}
+
+#all .visualizacoes {
+	width: 161px;
+	height: 37px;
+	background: #b5b5b5;
+	margin: 23px auto;
+}
+
+#all .visualizacoes .label {
+	display: block;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 3.7;
+	padding-left: 10px;
+}
+
+#all .visualizacoes .icons {
+	width: 29px;
+	height: 26px;
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	outline: none;
+	background: url(img/sprite.png) no-repeat;
+	margin-top: 6px;
+}
+
+#all .visualizacoes .icons.first {
+	margin-left: 10px;
+}
+
+#all .visualizacoes .icons.quadros {
+	background-position: -503px -16px;
+}
+
+#all .visualizacoes .icons.bolas {
+	background-position: -549px -16px;
+}
+
+#all .visualizacoes .icons.mapa {
+	background-position: -595px -17px;
+}
+
+#all .legenda {
+	width: 231px;
+	height: 32px;
+	margin: -10px auto;
+	display: none;
+}
+
+#all .legenda ul {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#all .legenda ul li {
+	width: 72px;
+	height: 100%;
+	float: left;
+	display: inline;
+	margin-right: 7px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 2.8;
+}
+
+#all .legenda ul .last {
+	margin-right: 0px;
+}
+
+#all .metas {
+	margin-top: 23px;	
+}
+
+#all .metas.bolinhas {
+	margin-top: -36px;
+	height: 834px;
+	float: left;
+	padding-bottom: 105px;
+}
+
+#all .metas .objetivo {
+	width: 933px;
+	min-height: 63px;
+	float: left;
+	margin: 109px 0px 54px 0px;
+}
+
+#all .metas .objetivo h2 {
+	font-size: 31px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0px 30px 0px 20px;
+	float: left;
+	line-height: 1.9;
+}
+
+#all .metas .objetivo p {
+	font-size: 22px;
+	color: #fff;
+	font-weight: 400;
+	font-style: italic;
+	margin: 0;
+	padding: 2px 0px 2px 0px;
+	line-height: 1.2;
+}
+
+#all .metas .grid {
+	list-style: none;
+	margin: 31px 0px 0px 0px;
+	padding: 0;
+}
+
+#all .metas .grid li a {
+	width: 301px;
+	min-height: 651px;
+	float: left;
+	display: inline;
+	margin: 0px 12px 15px 0px;
+	background: #fff;
+}
+
+#all .metas .grid li .last {
+	margin-right: 0;
+}
+
+#all .metas .grid li a h3 {
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0px 0px 0px 0px;
+	text-align: right;
+	color: #fff;
+	padding-right: 15px;
+}
+
+#all .metas .grid li a .conteudo {
+	width: 272px;
+	margin: 0 auto;
+}
+
+#all .metas .grid li a .texto {
+	width: 272px;
+	margin: 20px 0px 38px 0px ;
+}
+
+.leia-mais, .leia-mais:hover {
+	color: #000;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	font-style: italic;
+	margin-right: 35px;
+}
+
+.breve {
+	margin: 11px 0px 0px 126px;	
+}
+
+#all .metas .grid li a .texto p {
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 14px 12px 14px 12px;
+	margin: 0;
+	line-height: 2;
+}
+
+#all .metas .grid li a h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0px;
+	text-align: justify;
+	color: #212121;
+}
+
+#all .metas .grid li a .info {
+	font-size: 16px;
+	font-weight: 400;	
+	padding: 14px 0px 22px 0px;
+	margin: 0;
+	color: #212121;
+}
+
+#all .metas .grid li a .custo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-align: right;
+	font-weight: 700;
+	color: #000;
+}
+
+#all .metas .grid li a .comentarios {
+	width: 143px;
+	height: 50px;
+	float: right;
+	margin-top: -9px;
+}
+
+#all .metas .grid li a .comentarios .balao {
+	display: block;
+	width: 30px;
+	height: 26px;
+	background: url(img/sprite.png) no-repeat;
+	float: left;
+	margin-left: 24px;
+}
+
+#all .metas .grid li a .comentarios .numero {
+	font-size: 12px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#all .metas .grid li a .comentarios .numero b {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #000;
+}
+
+/*EIXO 1*/
+#all .metas .objetivo.eixo-1 {
+	background: #f62048;
+}
+
+#all .metas .grid.eixo-1 li a h3, #all .metas .grid li a.eixo-1 h3  {
+	background: #f62048;
+}
+
+#all .metas .grid.eixo-1 li a .texto, #all .metas .grid li a.eixo-1 .texto {
+	border-bottom: 3px dashed #f62048;
+}
+
+#all .metas .grid.eixo-1 li a .texto img, #all .metas .grid li a .texto img{
+	display: block;
+	margin: 0 auto;
+}
+
+#all .metas .grid.eixo-1 li a .custo, #all .metas .grid li a.eixo-1 .custo {
+	border-bottom: 2px solid #f62048;
+}
+
+#all .metas .grid.eixo-1 li a .comentarios .balao, #all .metas .grid li a.eixo-1 .comentarios .balao {
+	background-position: -3px -5px;
+}
+
+/*EIXO 2*/
+#all .metas .objetivo.eixo-2 {
+	background: #93d521;
+}
+
+#all .metas .grid.eixo-2 li a h3, #all .metas .grid li a.eixo-2 h3 {
+	background: #93d521;
+	text-align: right;
+}
+
+#all .metas .grid.eixo-2 li a .texto, #all .metas .grid li a.eixo-2 .texto {
+	border-bottom: 3px dashed #93d521;
+}
+
+#all .metas .grid.eixo-2 li a .custo, #all .metas .grid li a.eixo-2 .custo {
+	border-bottom: 2px solid #93d521;
+}
+
+#all .metas .grid.eixo-2 li a .comentarios .balao, #all .metas .grid li a.eixo-2 .comentarios .balao {
+	background-position: -53px -4px;
+}
+
+/*EIXO 3*/
+#all .metas .objetivo.eixo-3 {
+	background: #12c2d2;
+}
+
+#all .metas .grid.eixo-3 li a h3, #all .metas .grid li a.eixo-3 h3 {
+	background: #12c2d2;
+}
+
+#all .metas .grid.eixo-3 li a .texto, #all .metas .grid li a.eixo-3 .texto {
+	border-bottom: 3px dashed #12c2d2;
+}
+
+#all .metas .grid.eixo-3 li a .custo, #all .metas .grid li a.eixo-3 .custo {
+	border-bottom: 2px solid #12c2d2;
+}
+
+#all .metas .grid.eixo-3 li a .comentarios .balao, #all .metas .grid li a.eixo-3 .comentarios .balao {
+	background-position: -105px -5px;
+}
+
+/*EIXOS*/
+.eixo-1 {
+	background: #f62048;
+}
+
+.eixo-2 {
+	background: #93d521;
+}
+
+.eixo-3 {
+	background: #12c2d2;
+}
+
+.not-found {
+	width: 100%;
+	float: left;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+}
+
+.loader {
+	width: 100%;
+	float: left;
+	height: 50px;
+	margin: 16px 0px 65px 0px;
+}
+
+.loader img {
+	display: block;
+	margin: 0 auto;
+}
+
+/*CIRCLES*/
+#all .metas.bolinhas ul {
+	list-style: none;
+	padding: 0;
+	width: 52px;
+	height: 100%;
+	float: left;
+	background: none;
+	position: relative;
+}
+
+#all .metas.bolinhas ul li a {
+	display: block;
+	width: 52px;
+	height: 53px;
+	outline: none;
+	margin-bottom: 8px;
+	background: url(img/sprite.png) no-repeat;
+	position: absolute;
+	bottom: 0;
+}
+
+#all .metas.bolinhas ul li .bolinha-objetivo {
+	text-indent: 0;
+	background: none;
+	text-align: center;
+	bottom: -29px;
+}
+
+#all .metas.bolinhas ul li .objetivo .img-container {
+	width: 48px;
+	height: 30px;
+}
+
+#all .metas.bolinhas ul li .objetivo img {
+	display: block;
+	margin: 0 auto;
+}
+
+#all .metas.bolinhas ul li .objetivo span {
+	display: block;
+	float: left;
+	width: 100%;
+	text-indent: -4px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	color: #303030;
+	font-weight: 700;
+}
+/*EIXO 1*/
+#all .metas.bolinhas ul.eixo-1 li a .hover {
+	width: 290px;
+	min-height: 77px;
+	display: none;
+	position: absolute;
+	top: 24px;
+	left: 25px;
+	z-index: 1;
+}
+
+#all .metas.bolinhas ul.eixo-1 li a .hover .seta {
+	width: 32px;
+	height: 33px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(img/sprite.png) no-repeat;
+	background-position: -349px -19px;
+}
+
+#all .metas.bolinhas ul.eixo-1 li a .hover .texto {
+	width: 258px;
+	background: #f62048;
+	position: absolute;
+	right: 1px;
+	text-align:center;
+	padding: 22px 10px 22px 10px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 700;
+}
+
+/*EIXO 2 e 3*/
+#all .metas.bolinhas ul.eixo-2 li a .hover, #all .metas.bolinhas ul.eixo-3 li a .hover {
+	width: 290px;
+	min-height: 77px;
+	display: none;
+	position: absolute;
+	top: 24px;
+	right: 25px;
+	z-index: 1;
+}
+
+#all .metas.bolinhas ul.eixo-2 li a .hover .seta, #all .metas.bolinhas ul.eixo-3 li a .hover .seta {
+	width: 32px;
+	height: 33px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url(img/sprite.png) no-repeat;
+	background-position: -394px -19px;
+}
+
+#all .metas.bolinhas ul.eixo-3 li a .hover .seta {
+	background-position: -439px -19px;
+}
+
+#all .metas.bolinhas ul.eixo-2 li a .hover .texto, #all .metas.bolinhas ul.eixo-3 li a .hover .texto {
+	width: 258px;
+	background: #93d521;
+	position: absolute;
+	left: 1px;
+	text-align:center;
+	padding: 22px 10px 22px 10px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 700;
+}
+
+#all .metas.bolinhas ul.eixo-3 li a .hover .texto {
+	left: 3px;
+	background: #12c2d2;
+}
+
+#all .metas.bolinhas ul.eixo-1 li a {
+	background-position: -155px 1px;
+	/*left: 28px;*/
+}
+
+#all .metas.bolinhas ul.eixo-2 li a {
+	background-position: -217px 1px;
+}
+
+#all .metas.bolinhas ul.eixo-3 li a {
+	background-position: -283px 1px;
+}
+
+/*Conheça*/
+.content.conheca h2 {
+	font-size: 25px;
+	font-weight: 700;
+	font-style: italic;
+	color: #f62048;
+	line-height: 1;
+}
+
+.content.conheca .azul {
+	font-size: 16px;
+	color: #007a9a;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content.conheca .left, .content.conheca .normal {
+	width: 583px;
+	font-size: 12px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+}
+
+.content.conheca .metas {
+	float: left;
+	margin-left: 25px;
+}
+
+.content.conheca .normal {
+	width: 100%;
+}
+
+.content.conheca .cafe {
+	margin: 61px 0px 72px 0px;
+}
+
+.content.objetivos-e-metas h2 {
+	font-size: 25px;
+	font-weight: 700;
+	font-style: italic;
+	color: #000;
+	line-height: 1;
+}
+
+.content.objetivos-e-metas .center {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+}
+
+.content.objetivos-e-metas .fluxo {
+	display: block;
+	margin: 0 auto;
+}
+
+.content.objetivos-e-metas .normal {
+	font-size: 14px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+}
+
+.content.objetivos-e-metas .normal.last {
+	padding-bottom: 72px;
+}
+
+.content.territorial h2 {
+	font-size: 21px;
+	font-weight: 700;
+	font-style: italic;
+	color: #000;
+	line-height: 1;
+}
+
+.content.territorial .normal {
+	font-size: 14px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content.territorial .small {
+	font-size: 12px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content.territorial .bottom {
+	width: 776px;
+	margin: 41px auto;
+}
+
+.content.territorial .bottom img {
+	float: left;
+}
+
+.content.territorial .bottom .numeros {
+	float: left;
+	margin-left: 17px;
+}
+
+.content.territorial .bottom .numeros p {
+	font-size: 12px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content.territorial .bottom .numeros p b {
+	font-size: 24px;
+}
+
+.content.territorial .bottom .quadro {
+	width: 100%;
+	background: #12c2d2;
+	float: left;
+	margin: 43px 0px 72px 0px;
+}
+
+.content.territorial .bottom .quadro p {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;
+	font-style: italic;
+	padding: 19px;
+}
+
+#container.bolinhas {
+	width: 1079px;
+}
+
+#all .modal .content .mapa {
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+/*RULES FOR MAP*/
+map > area,
+map > area:active,
+map > area:focus {outline: none; border:0; }
+
+#mapaSub{
+	position:relative;
+	float:left;
+	width:543px;
+	height:761px;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background:url(img/mapa.png) no-repeat;
+}
+#legenda{
+	float:left;
+	font-size:11px;
+	font-family:'Montserrat', Arial;
+	text-transform:uppercase;
+	color:#fff;
+	width:400px;
+	padding:0 0 0 0;
+	margin:10px 0 0 0;
+	
+}
+#legenda strong{
+	float:left;
+	background:#c1c1c1;
+	padding:5px;
+	margin:3px 0 0 3px;	
+}
+
+/* SUB PREFEITURAS */
+map{
+	z-index:3;
+	position:absolute;
+	float:left;
+}
+#mapaSub .subs div{
+	text-indent:-9999px;
+	cursor:pointer;
+	display:none;
+	font-size:12px;
+	font-family:'Montserrat', Arial;
+	text-transform:uppercase;
+}
+#mapaSub .subs div.active{
+	text-indent:1px;
+	float:left;
+	z-index:4;
+	position:absolute;
+	display:block!important;
+}
+#mapaSub .subs div.clicado{
+	display:block!important;
+}
+
+#mapaSub .mapeamento{
+	position:absolute; 
+	float:left; 
+	z-index:99;
+}
+#mapaSub .subs{
+	position:absolute; 
+	float:left; 
+	z-index:2;
+	
+}
+#mapaSub .perus{
+	background:url(img/perus.png) no-repeat;
+	width:121px;
+	height:96px;
+	float:left;
+	position:absolute;
+	top: 48px;
+	left: 55px;
+	padding:30px 0 0 20px;
+}
+#mapaSub .pirituba{
+	background:url(img/pirituba.png) no-repeat;
+	width:76px;
+	height:108px;
+	float:left;
+	position:absolute;
+	top: 81px;
+	left: 108px;
+	padding:35px 0 0 8px;	
+}
+#mapaSub .freguesia-do-o-brasilandia{
+	background:url(img/freguesia.png) no-repeat;
+	width:76px;
+	height:108px;
+	float:left;
+	position:absolute;
+	top: 81px;
+	left: 170px;
+	padding:35px 0 0 0px;
+}
+#mapaSub .casa-verde{
+	background:url(img/casa.png) no-repeat;
+	width:120px;
+	height:109px;
+	float:left;
+	position:absolute;
+	top: 83px;
+	left: 196px;
+	padding:35px 0 0 0px;	
+}
+#mapaSub .santana{
+	background:url(img/santana.png) no-repeat;
+	width:73px;
+	height:102px;
+	float:left;
+	position:absolute;
+	top: 92px;
+	left: 230px;
+	padding:35px 0 0 8px;		
+}
+#mapaSub .tremembe{
+	background:url(img/tremembe.png) no-repeat;
+	width:103px;
+	height:142px;
+	float:left;
+	position:absolute;
+	top: 14px;
+	left: 246px;
+	padding:40px 0 0 15px;
+	text-align:center;	
+}
+#mapaSub .vila-maria-guilherme{
+	background:url(img/maria.png) no-repeat;
+	width:110px;
+	height:64px;
+	float:left;
+	position:absolute;
+	top: 141px;
+	left: 265px;
+	padding:10px 0 0 0px;	
+	text-align:center;	
+}
+#mapaSub .penha{
+	background:url(img/penha.png) no-repeat;
+	width:87px;
+	height:90px;
+	float:left;
+	position:absolute;
+	top: 141px;
+	left: 331px;
+	padding:49px 0 0 5px;		
+}
+#mapaSub .ermelino{
+	background:url(img/ermelino.png) no-repeat;
+	width:53px;
+	height:57px;
+	float:left;
+	position:absolute;
+	top: 144px;
+	left: 368px;
+	padding:0 0 0 0;	
+}
+#mapaSub .sao-miguel{
+	background:url(img/miguel.png) no-repeat;
+	width:102px;
+	height:62px;
+	float:left;
+	position:absolute;
+	top: 137px;
+	left: 411px;
+	padding:18px 0 0 5px;	
+}
+#mapaSub .itaim-paulista{
+	background:url(img/itaim.png) no-repeat;
+	width:69px;
+	height:52px;
+	float:left;
+	position:absolute;
+	top: 150px;
+	left: 457px;
+	padding:18px 0 0 5px;	
+}
+#mapaSub .lapa{
+	background:url(img/lapa.png) no-repeat;
+	width:111px;
+	height:67px;
+	float:left;
+	position:absolute;
+	top: 171px;
+	left: 120px;
+	padding:18px 0 0 50px;		
+}
+#mapaSub .se{
+	background:url(img/se.png) no-repeat;
+	width:72px;
+	height:68px;
+	float:left;
+	position:absolute;
+	top: 191px;
+	left: 211px;
+	padding:18px 0 0 25px;		
+}
+#mapaSub .mooca{
+	background:url(img/mooca.png) no-repeat;
+	width:81px;
+	height:69px;
+	float:left;
+	position:absolute;
+	top: 193px;
+	left: 259px;
+	padding:18px 0 0 15px;	
+}
+#mapaSub .aricanduva{
+	background:url(img/aricanduva.png) no-repeat;
+	width:70px;
+	height:60px;
+	float:left;
+	position:absolute;
+	top: 210px;
+	left: 318px;
+	padding:18px 0 0 15px;		
+}
+#mapaSub .itaquera{
+	background:url(img/itaquera.png) no-repeat;
+	width:104px;
+	height:93px;
+	float:left;
+	position:absolute;
+	top: 185px;
+	left: 373px;
+	padding:45px 0 0 15px;		
+}
+#mapaSub .guaianases{
+	background:url(img/guaianazes.png) no-repeat;
+	width:54px;
+	height:58px;
+	float:left;
+	position:absolute;
+	top: 191px;
+	left: 458px;
+	padding:15px 0 0 15px;	
+}
+#mapaSub .butanta{
+	background:url(img/butanta.png) no-repeat;
+	width:120px;
+	height:76px;
+	float:left;
+	position:absolute;
+	top: 227px;
+	left: 76px;
+	padding:30px 0 0 25px;		
+}
+#mapaSub .pinheiros{
+	background:url(img/pinheiros.png) no-repeat;
+	width:86px;
+	height:99px;
+	float:left;
+	position:absolute;
+	top: 212px;
+	left: 151px;
+	padding:30px 0 0 25px;		
+}
+#mapaSub .vila-mariana{
+	background:url(img/mariana.png) no-repeat;
+	width:86px;
+	height:99px;
+	float:left;
+	position:absolute;
+	top: 248px;
+	left: 211px;
+	padding:10px 0 0 5px;		
+}
+#mapaSub .ipiranga{
+	background:url(img/ipiranga.png) no-repeat;
+	width:56px;
+	height:115px;
+	float:left;
+	position:absolute;
+	top: 247px;
+	left: 253px;
+	padding:40px 0 0 8px;	
+}
+#mapaSub .vila-prudente{
+	background:url(img/prudente.png) no-repeat;
+	width:76px;
+	height:45px;
+	float:left;
+	position:absolute;
+	text-align:center;
+	top: 252px;
+	left: 291px;
+	padding:10px 0 0 0;
+}
+#mapaSub .sapopemba{
+	background:url(img/sapopemba.png) no-repeat;
+	width:76px;
+	height:45px;
+	float:left;
+	position:absolute;
+	top: 263px;
+	left: 353px;
+	padding:29px 0 0 25px;			
+}
+#mapaSub .tiradentes{
+	background:url(img/tiradentes.png) no-repeat;
+	width:46px;
+	height:53px;
+	float:left;
+	position:absolute;
+	top: 238px;
+	left: 468px;
+}
+#mapaSub .mateus{
+	background:url(img/mateus.png) no-repeat;
+	width:112px;
+	height:73px;
+	float:left;
+	position:absolute;
+	top: 257px;
+	left: 383px;
+	padding:29px 0 0 5px;
+	text-align:center;	
+}
+#mapaSub .campo-limpo{
+	background:url(img/campo.png) no-repeat;
+	width:101px;
+	height:93px;
+	float:left;
+	position:absolute;
+	top: 296px;
+	left: 85px;
+	padding:35px 0 0 5px;	
+}
+#mapaSub .santo-amaro{
+	background:url(img/santo.png) no-repeat;
+	width:78px;
+	height:99px;
+	float:left;
+	position:absolute;
+	top: 294px;
+	left: 160px;
+	padding:29px 0 0 5px;		
+}
+#mapaSub .jabaquara{
+	background:url(img/jabaquara.png) no-repeat;
+	width:47px;
+	height:50px;
+	float:left;
+	position:absolute;
+	top: 315px;
+	left: 216px;
+	padding:10px 0 0 8px;	
+}
+#mapaSub .m-boi-mirim{
+	background:url(img/mirim.png) no-repeat;
+	width:82px;
+	height:126px;
+	float:left;
+	position:absolute;
+	top: 329px;
+	left: 85px;
+	padding:60px 0 0 8px;	
+}
+#mapaSub .socorro{
+	background:url(img/socorro.png) no-repeat;
+	width:121px;
+	height:213px;
+	float:left;
+	position:absolute;
+	top: 346px;
+	left: 156px;
+	padding:80px 0 0 8px;		
+}
+#mapaSub .cidade-ademar{
+	background:url(img/ademar.png) no-repeat;
+	width:70px;
+	height:93px;
+	float:left;
+	position:absolute;
+	top: 332px;
+	left: 203px;
+	padding:30px 0 0 12px;	
+}
+#mapaSub .parelheiros{
+	background:url(img/parelheiros.png) no-repeat;
+	width:209px;
+	height:297px;
+	float:left;
+	position:absolute;
+	top: 436px;
+	left: 77px;
+	padding:160px 0 0 70px;			
+}
+.colunaRegioes{
+	float:left;
+	width:430px;
+}
+.colunaRegioes h2{
+	background:url(img/bgSetaTitulo.jpg) no-repeat;
+	padding:0 0 0 40px;
+	font-family:'Tinos', verdana;
+	color:#595959;
+	font-weight:bold;
+	font-style:italic;
+	font-size:22px;
+}
+.colunaRegioes .selecionadas{
+	font-family:'Montserrat', verdana;
+	color:#000;
+	background:#fff;
+	padding:8px;
+	float:left;
+	font-size:13px;
+	margin:10px 0 0 0;
+}
+.colunaRegioes .limpar{
+	text-decoration:none;
+	color:#000;
+	background:#c1c1c1;
+	float:left;
+	padding:8px;
+	margin:10px 0 0 10px;
+	font-size:13px;
+	font-family:'Montserrat', verdana;
+}
+
+.container-mapa {
+	display: none;
+}
+
+.nome-sub {
+	font-size: 21px;
+	color: #212121;
+	font-style: italic;
+	font-weight: 400;
+	float: left;
+	width: 100%;
+	margin: 56px 0px 51px 0px;
+}

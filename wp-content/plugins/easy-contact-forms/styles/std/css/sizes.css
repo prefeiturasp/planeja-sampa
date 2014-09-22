@@ -1,0 +1,17 @@
+.ufo-mainform.ufo-users{width:770px;}
+.ufo-mainform.ufo-users .ufo-tab-wrapper{height:430px;}
+.ufo-mainform.ufo-users .viewtable{height:370px;}
+
+.ufo-mainform.ufo-applicationsettings{width:720px;}
+.ufo-mainform.ufo-applicationsettings .ufo-tab-wrapper{height:410px;}
+
+.ufo-mainform.ufo-customforms{width:864px;}
+.ufo-mainform.ufo-customforms .ufo-tabs {height:430px;}
+
+.ufo-mainform.ufo-customforms .ufo-tabs .ufo-tabs {height:360px;}
+.ufo-mainform.ufo-customforms .ufo-tabs.ufo-customform-designer-div {height:auto;min-height:390px;}
+.ufo-mainform.ufo-customforms .viewtable{height:320px;}
+
+.ufo-mainform.ufo-customformsentries{width:730px;}
+.ufo-mainform.ufo-customformsentries .ufo-tab-wrapper{min-height:360px;}
+.ufo-mainform.ufo-customformsentries .viewtable{height:312px;}

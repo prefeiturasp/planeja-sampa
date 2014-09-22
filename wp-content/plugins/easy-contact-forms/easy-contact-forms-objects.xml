@@ -1,0 +1,17 @@
+<objects>
+  <ContactTypes/>
+  <ApplicationSettings/>
+  <Users/>
+  <Roles/>
+  <Files/>
+  <CustomForms>
+    <CustomFormEntryStatistics/>
+    <CustomFormFields/>
+    <CustomFormsEntries>
+      <CustomFormEntryFiles/>
+    </CustomFormsEntries>
+  </CustomForms>
+  <CustomFormFieldTypes/>
+  <CustomForms_MailingLists/>
+  <Options/>
+</objects>

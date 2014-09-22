@@ -1,0 +1,265 @@
+div.ufo-form div, div.ufo-form span, div.ufo-form h1, div.ufo-form h2, div.ufo-form h3, div.ufo-form h4, div.ufo-form h5, div.ufo-form h6, div.ufo-form p, div.ufo-form a, div.ufo-form font, div.ufo-form img, div.ufo-form ol, div.ufo-form ul, div.ufo-form li, div.ufo-form form, div.ufo-form fieldset, div.ufo-form label, div.ufo-form legend
+{margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline; background: transparent; background-repeat: no-repeat;}
+
+div.ufo-form input, div.ufo-form select, div.ufo-form textarea, div.ufo-form button{margin: 1px 0;}
+
+.ufo-form-submit-failure{background-image: url(../images/delete_16.png) !important}
+.ufo-form-submit-success{background-image: url(../images/success.png) !important}
+
+div.ufo-form .ufo-customfields-valid{background-image: url(../images/agt_action_success.png) !important}
+div.ufo-form .ufo-customfields-refresh-button{background-image: url(../images/reload_16.png) !important}
+div.ufo-form .ufo-customfield-date{background-image: url(../images/calendar_16.png) !important}
+div.ufo-form .ufo-customfields-invalid{background-image: url(../images/failure2.png) !important}
+
+div.ufo-form  span.ufo-cell-left,
+div.ufo-form  span.ufo-cell-right, 
+div.ufo-form  span.ufo-cell-center,
+div.ufo-form  div.ufo-cell-left,
+div.ufo-form  div.ufo-cell-right, 
+div.ufo-form  div.ufo-cell-center{
+	display:inline-block;
+}
+
+div.ufo-form span.ufo-cell-left label, 
+div.ufo-form span.ufo-cell-right label, 
+div.ufo-form span.ufo-cell-center label,
+div.ufo-form div.ufo-cell-left label, 
+div.ufo-form div.ufo-cell-right label, 
+div.ufo-form div.ufo-cell-center label
+{
+	display:block;
+	margin:3px 0;
+}
+
+div.ufo-form span.ufo-cell-left label {margin-right:5px;}
+div.ufo-form div.ufo-cell-left label {margin-right:5px;}
+div.ufo-form span.ufo-cell-right label {margin-left:5px;}
+div.ufo-form div.ufo-cell-right label {margin-left:5px;}
+
+div.ufo-form span.ufo-cell-right {width:0;padding-left:0;}
+div.ufo-form div.ufo-cell-right {width:0;padding-left:0;}
+div.ufo-form span.ufo-cell-left {width:130px;}
+div.ufo-form div.ufo-cell-left {width:130px;}
+div.ufo-form span.ufo-cell-center {width:230px}
+div.ufo-form div.ufo-cell-center {width:230px}
+
+div.ufo-form span.ufo-cell-center input, 
+div.ufo-form span.ufo-cell-center textarea, 
+div.ufo-form span.ufo-cell-center select, 
+div.ufo-form div.ufo-cell-center input, 
+div.ufo-form div.ufo-cell-center textarea, 
+div.ufo-form div.ufo-cell-center select 
+{width:100%}
+
+div.ufo-form div.ufo-customform-row {padding:1px 0;}
+div.ufo-form div.ufo-customform-row * {vertical-align:middle;}
+
+div.ufo-form div.ufo-fieldtype-23 span.ufo-cell-center {width:auto;}
+div.ufo-form div.ufo-fieldtype-27,
+div.ufo-form div.ufo-fieldtype-30,
+div.ufo-form div.ufo-fieldtype-31,
+div.ufo-form div.ufo-fieldtype-14
+{display:none}
+
+
+div.ufo-form div.ufo-customform-row.ufo-fieldtype-25 *,
+div.ufo-form div.ufo-customform-row.ufo-fieldtype-23 *,
+div.ufo-form div.ufo-customform-row.ufo-fieldtype-20 *,
+div.ufo-form div.ufo-customform-row.ufo-fieldtype-19 *,
+div.ufo-form div.ufo-customform-row.ufo-fieldtype-10 *,
+div.ufo-form div.ufo-customform-row.ufo-fieldtype-12 *,
+div.ufo-form div.ufo-customform-row.ufo-fieldtype-13 *,
+div.ufo-form div.ufo-customform-row.ufo-fieldtype-8 *
+{vertical-align:top;}
+
+div.ufo-form div.ufo-customform-row input[type="radio"] {margin-top:6px !important}
+
+div.ufo-form .ufo-field-default-value {color:#333;}
+div.ufo-form div.ufo-fieldtype-10 div.ufo-cell-center {width:auto},
+
+
+div.ufo-form .ufo-customfields-field-description {font-size:0.9em;}
+
+div.ufo-form .ufo-customfields-container-description {padding:10px 0;}
+
+div.ufo-form .ufo-customfields-required-suffix {padding-left:3px;}
+
+div.ufo-form button.ufo-customfields-refresh-button {
+	width:16px;
+	height:16px;
+	margin:5px;
+  	background-repeat: no-repeat  !important;
+  	background-position: center center !important;
+  	background-color:transparent;
+  	border:0;
+  	outline:0;
+}
+
+div.ufo-form div.ufo-customform-row div.ufo-customfields-valid, 
+div.ufo-form div.ufo-customform-row div.ufo-customfields-invalid{
+  background-repeat: no-repeat  !important;
+  z-index:10;
+  font-size:0.9em;
+  font-family:Arial;
+  float: left;
+}
+
+div.ufo-form div.ufo-customfields-valid {
+  background-position: 2px center !important;
+  height:20px;
+  padding-left:25px;
+}
+
+
+div.ufo-form div.ufo-customfields-invalid {
+  background-position: 8px center;
+  padding:7px;
+  padding-left:28px;
+  z-index:15;
+  border-radius:16px;
+  border:1px solid #86a9d8;
+  background-color:#ffffff;
+  color:#333;
+}
+
+div.ufo-form .ufo-customfields-invalidvalue {
+	border-left:4px solid #fc3844;
+}
+
+div.ufo-form .ufo-customfield-description {
+	color:grey;
+	font-size:0.9em;
+}
+
+.ufo-form-submit-success, 
+.ufo-form-submit-failure,
+div.ufo-form .ufo-form-submit-success, 
+div.ufo-form .ufo-form-submit-failure {
+	width:200px;
+	margin:60px auto;
+	padding:20px 40px;	
+	border-radius:10px;
+	background-repeat: no-repeat  !important;
+	background-position: 8px center !important;
+}
+
+.ufo-form-submit-failure,
+div.ufo-form .ufo-form-submit-failure {
+	background-color:#f1a097;
+}
+
+.ufo-form-submit-failure strong,
+div.ufo-form .ufo-form-submit-failure strong {
+	color:white;
+	padding-top:15px;
+}
+
+.ufo-form-submit-success,
+div.ufo-form .ufo-form-submit-success{
+	background-color:#e1f1f8;
+}
+
+
+div.ufo-form div.ufo-radiogroup-row * {
+	vertical-align:middle;
+}
+
+div.ufo-form a.ufo-frontendbutton {
+  	margin: 0px 1px;
+	padding:0 6px;
+  	float:left;
+  	clear:both;
+	background-image:url(../images/button_shadow.png);
+	background-repeat:repeat-x;
+  	color:#ffffff;
+  	text-decoration:none;
+	white-space:nowrap;
+  	font-size:15px;
+}
+
+div.ufo-form a.ufo-frontendbutton span{
+	padding:6px 4px;
+	padding-left:25px;
+	display:block;
+	background-image:url(../images/button_arrow.png);
+	background-repeat:no-repeat;
+  	background-position: left center;
+	background-color:transparent;
+}
+
+div.ufo-form a.ufo-frontendbutton.blue{
+	background-color: #3b97c0;
+	border:1px solid #5858b4;
+	border-radius:18px;
+	text-shadow: #2b4f74 -1px -1px 1px;
+}
+
+div.ufo-form a.ufo-frontendbutton.blue:hover{
+	border-color:#284b6e;
+	color:#fb2;
+}
+
+div.ufo-form a.ufo-frontendbutton.green{
+	background-color: #57b15e;
+	border:1px solid #3c9b4b;
+	border-radius:18px;
+	text-shadow: #205128 -1px -1px;
+}
+
+div.ufo-form a.ufo-frontendbutton.green:hover{
+	color:#dfd;
+}
+
+div.ufo-form a.ufo-frontendbutton.red{
+	background-color: #e94b3a;
+	border:1px solid #d04437;
+	border-radius:18px;
+	text-shadow: #68312e -1px -1px;
+}
+
+div.ufo-form a.ufo-frontendbutton.red:hover{
+	color:#fdd;
+}
+
+div.ufo-form a.ufo-frontendbutton.gray{
+	background-color: #bfccd7;
+  	color:#ffffff;
+	border:1px solid #aaa;
+	border-radius:18px;
+	text-shadow: #444 -1px -1px 1px;
+}
+
+div.ufo-form a.ufo-frontendbutton.gray:hover{
+	color:#f0f0f0;
+}
+
+.ufo-customforms-date-field {
+	background-image: url(../images/calendar_16.png) !important;
+	background-position: 99% center !important;
+	background-repeat: no-repeat !important;
+	cursor:pointer;
+}
+
+div.ufo-form div.ufo-pb-link {
+	font-size:0.8em;
+}
+div.ufo-form div.ufo-pb-link a {
+	display:inline !important;
+}
+
+div.ufo-form div.ufo-customforms-disable,
+div.ufo-customforms-disable{
+	background-image: url(../images/wait.gif) !important;
+	background-position: 99% 1%;
+	background-repeat: no-repeat !important;
+	background-color: transparent;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+  	-moz-opacity: .20;
+  	opacity: .20;
+  	filter: alpha(opacity=20);
+  	z-index: 400;
+}

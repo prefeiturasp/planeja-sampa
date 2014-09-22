@@ -1,0 +1,1 @@
+<?php switch ($phase->index) { case 3: $required = ((string) $xml->Required) == 'on'; $dv = (string) $xml->DefaultValue; if ($required && empty($dv)) { $dv = 'Please enter ' . (string) $xml->Label; $xml->DefaultValue = $dv; $xml->SetDefaultValue = 'on'; $fld->set('Settings', $xml->asXML()); $fld->save(); $varmap['id-' . $fldid] = $dv; } break; } ?>

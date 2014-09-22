@@ -1,0 +1,125 @@
+body {
+	background: #FBFBFB;
+}
+
+
+.logo {
+	width: 100%;
+	height: 200px;
+	
+	background-image: url(images/logo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.login-form {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	
+	border: 1px solid #E5E5E5;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	     -o-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-box-shadow: 0 2px 10px -1px rgba(200,200,200,0.7);
+	   -moz-box-shadow: 0 2px 10px -1px rgba(200,200,200,0.7);
+	    -ms-box-shadow: 0 2px 10px -1px rgba(200,200,200,0.7);
+	     -o-box-shadow: 0 2px 10px -1px rgba(200,200,200,0.7);
+	        box-shadow: 0 2px 10px -1px rgba(200,200,200,0.7);
+	
+	background: white;
+}
+	
+	.login-message {
+		text-align:center;
+		color: #888;
+		font: 12px courier;
+		padding: 0px 0px 20px 0px;
+	}
+
+	label {
+		color: #777;
+		font-family: sans-serif;
+		font-size: 14px;
+		cursor: pointer;
+	}
+
+	input.input {
+		width: 290px;
+		margin-top: 2px;
+		margin-right: 6px;
+		margin-bottom: 16px;
+		padding: 5px;
+		
+		border: 1px solid #E5E5E5;
+		outline: none;
+		
+		-webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+		   -moz-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+		    -ms-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+			 -o-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+		        box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+		
+		background: #FBFBFB;
+		
+		font-size: 24px;
+		font-weight: 200;
+		line-height: 1;
+	}
+
+	input.input:hover, input.input:focus {
+		border-color: #b5b5b5;
+		
+		-webkit-box-shadow: inset 1px 1px 3px rgba(200,200,200,0.8);
+		   -moz-box-shadow: inset 1px 1px 3px rgba(200,200,200,0.8);
+		    -ms-box-shadow: inset 1px 1px 3px rgba(200,200,200,0.8);
+			 -o-box-shadow: inset 1px 1px 3px rgba(200,200,200,0.8);
+		        box-shadow: inset 1px 1px 3px rgba(200,200,200,0.8);
+	}
+
+.notice {
+	display: none;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	background: white;
+	line-height: 50px;
+	font-size: 23px;
+	text-align: center;
+	padding-bottom: 4px;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-top: 10px;
+	
+	-webkit-box-shadow: inset 0px 0px 9px rgba(0,0,0,0.5);
+	   -moz-box-shadow: inset 0px 0px 9px rgba(0,0,0,0.5);
+	    -ms-box-shadow: inset 0px 0px 9px rgba(0,0,0,0.5);
+		 -o-box-shadow: inset 0px 0px 9px rgba(0,0,0,0.5);
+	        box-shadow: inset 0px 0px 9px rgba(0,0,0,0.5);
+	color: #666;
+}
+
+.notice.error {
+	background: #ff1c00;
+	color: white;
+	text-shadow: 0px -1px 0px black;
+}
+
+.loggedout .logout-message {
+	display: block;
+}
+
+.incorrect_credentials .incorrect-credentials {
+	display: block;
+}
+
+.security_provider .security-provider {
+	display: block;
+}

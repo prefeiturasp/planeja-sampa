@@ -1,0 +1,63 @@
+
+The codes have to be added to the end of the functions.php file of your WordPress theme.
+By doing so your changes will not be overwritten when you install a new version of Social Login.
+
+********************************************************************************
+* Use your own CSS
+********************************************************************************
+ 
+ function oa_social_login_set_custom_css($css_theme_uri)
+ {
+ 	//Replace the URL by an URL to your own CSS Stylesheet
+	$css_theme_uri = 'http://public.oneallcdn.com/css/api/socialize/themes/buildin/connect/large-v1.css';
+	
+	//Done
+	return $css_theme_uri;
+ }
+ add_filter('oa_social_login_default_css', 'oa_social_login_set_custom_css');
+ add_filter('oa_social_login_widget_css', 'oa_social_login_set_custom_css');
+
+
+********************************************************************************
+* Restrict access and allow only email addresses of a specific domain
+********************************************************************************
+
+function oa_social_login_filter_new_user_email ($user_email)
+{
+	//Only users with social network accounts having an email address ending in @gmail.com may register
+	if ( ! preg_match ('/@gmail\.com$/i', trim ($user_email)))
+	{
+		return 'disallowed';
+	}
+	return $user_email;
+}
+add_filter('oa_social_login_filter_new_user_email', 'oa_social_login_filter_new_user_email');
+
+
+********************************************************************************
+* Custom redirections
+********************************************************************************
+
+//Redirection for new users
+function oa_social_login_filter_redirect_for_new_users ($url, $user_data)
+{
+	//Force the url to something else
+	$url = 'http://my-website.com/welcome-new-user/';
+
+	//New users will be redirected here
+	return $url;
+}
+add_filter('oa_social_login_filter_registration_redirect_url', 'oa_social_login_filter_redirect_for_new_users', 10, 2);
+
+
+//Redirection for existing users
+function oa_social_login_filter_redirect_for_existing_users ($url, $user_data)
+{
+	//Force the url to something else
+	$url = 'http://my-website.com/welcome-back/';
+	
+	//Returning users will be redirected here
+	return $url;
+}
+add_filter('oa_social_login_filter_login_redirect_url', 'oa_social_login_filter_redirect_for_existing_users', 10, 2);
+

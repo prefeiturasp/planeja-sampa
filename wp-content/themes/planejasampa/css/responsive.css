@@ -1,0 +1,559 @@
+	@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (min-width: 1700px) and (max-width: 4000px) {
+	#slider .legenda{
+		right: 24%;
+	}
+	#slider a.saiba{
+		right: 24%;
+	}
+}
+
+@media only screen and (max-width: 1025px){
+	
+	.wrap{
+		width:1000px;
+	}	
+	.divAgenda{
+		width:900px;
+		height:auto;
+	}
+	.divAgenda{
+		width:900px;
+		height:250px;
+		margin:0  auto;
+	}
+	#slider .legenda{
+		font-size:22px;
+		width:516px;
+		right: 58px;
+		line-height:27px;		
+		height:auto;
+	}
+	#slider a.saiba {
+		width: 150px;
+		height: 26px;
+		right: 59px;
+		bottom: 40px;
+		opacity: 0.9;
+		padding: 9px 0 0 0;
+		font-size: 18px;
+	}
+	.divAgenda .boxAgenda{
+		margin:15px 0 0 0;
+	}
+	#footer p.conteudo{
+		padding-left:3px;
+	}
+	#header .redesSociais{
+		right: -30px;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.wrap{
+		width:768px;
+	}
+	#slider .legenda{
+		font-size:18px;
+		width:460px;
+		line-height:20px;
+		padding:5px;
+	}
+	.divDestaques{
+		height:auto;
+		float:left;
+	}
+	.divAgenda{
+		width:768px;
+		height:550px;
+		margin:0 auto;
+	}
+	.boxNoticias.centro{
+		margin-top:0;
+	}
+	#footer p{
+		clear:both;
+	}
+	#footer{
+		height:420px;
+	}
+	#slider a.saiba {
+		width: 150px;
+		height: 23px;
+		right: 71px;
+		bottom: 43px;
+		opacity: 0.9;
+		padding: 9px 0 0 0;
+		font-size: 15px;
+	}
+	.boxDestaque a.plano,.boxDestaque a.programa, .boxDestaque a.leis, .boxDestaque a.diretrizes, .boxDestaque a.conselho {
+		margin:0 0 0 0
+	}
+	#header .divBusca{
+		float:left;
+		clear:both;
+		margin:0 0 0 0;
+	}
+	#header .divNews{
+		top: 3px;
+		left: 225px;
+		position: absolute;
+	}
+	.biblioteca .input.text .search{
+		width:120px;
+		margin:8px 0 0 0 ;
+	}
+	.biblioteca .input.text label{
+		float:left;
+		clear:both;
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+	}
+	.biblioteca .filtro{
+		padding:0 0 0 42px;
+	}
+	.biblioteca .filtro label{
+		padding:15px 0 0 0;
+	}
+	.biblioteca .filtro a{
+		margin-left:0;
+		padding-left:0;
+	}
+	.biblioteca .filtro a{
+		margin-left:0 !important;
+	}
+	.biblioteca ul.list.boxes li .inner-box{
+		background:url(../img/bgBoxBibliotecaMeio.gif) no-repeat;
+		width:473px;
+		height:274px;
+	}
+	.biblioteca h5{
+		clear:both;
+		width:420px;
+	}
+	#footer p.secretaria{
+		padding:10px 0 0 0;
+	}
+	#footer p.conteudo{
+		margin:30px 0 0 0;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.wrap{
+		width:480px;
+	}
+
+	.boxDestaque.terceiro{
+		clear:both;
+		padding:0 0 0 80px;
+	}
+	.boxDestaque{
+		width:155px;
+		padding:0 0 0 0;
+	}
+	.divDestaques{
+		height:auto;
+		float:left;
+	}
+	.divAgenda{
+		width:480px;
+		height:700px;			
+	}
+	.divAgenda .boxAgenda{
+		background:none;
+		margin:0 auto;
+		float:none;
+		padding:30px 0 0 0;
+	}
+	.boxNoticias.centro{
+		margin-top:0;
+	}
+	#menu .menuDestaques li{
+		margin: 11px 15px 0 0;
+		width: 167px;
+	}
+	#menu .nav li{
+		font-size: 12px;
+		float: left;
+		margin: 0 0 0 0;
+		padding: 0 0 0 3px;
+		text-align: center;	
+	}
+	#menu .submenu{
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	#footer{
+		height:520px;
+	}
+	#header .redesSociais{
+		position: absolute;
+		top: 155px;
+		left: -59px;
+	}
+	#header .redesSociais .siga{
+		color:#333132;
+	}
+	#menu .menuPeq{
+		display:block;
+		background:url(../img/icoMenuResp.gif) no-repeat;
+		float:left;
+		width:160px;
+		color:#848484;
+		height:37px;
+		clear:both;
+		text-decoration:none;
+		margin:59px 0 0 0;
+		padding:8px 0 0 40px;
+		font-size:13px;
+		font-family: 'merriweatherheavy_italic', arial, verdana;
+		text-transform:lowercase;
+	}
+	#menu .nav{
+		padding:53px 0 5px 22px;
+		display:none;
+	}
+	#menu .menuDestaques{
+		display:none;
+	}
+	#menu.ativo{
+		height:473px;
+	}
+	#slider .legenda{
+		font-size:15px;
+		width:360px;
+		line-height:20px;
+		right: 40px;
+		bottom:45px;
+		padding: 10px 5px 0 0;
+	}
+	#slider a.saiba {
+		width: 120px;
+		height: 28px;
+		right: 40px;
+		bottom: 4px;
+		opacity: 0.9;
+		padding: 9px 0 0 0;
+		font-size: 15px;
+	}
+	#menu .nav{
+		padding:5px 0 0 0;
+	}
+	#menu .nav li{
+		display:block;
+		clear:both;
+		float:left;
+		padding:8px 0 0 0;
+		width:380px;
+	}
+	#menu .submenu{
+		display:block !important;
+	}
+	#menu{
+		width:380px;
+	}
+	#menu .submenu{
+		position:relative;
+		top:0;
+		left:26px;
+	}
+	#menu .submenu li a{
+		text-align:left;
+	}
+	.boxDestaque a.plano,.boxDestaque a.programa, .boxDestaque a.leis, .boxDestaque a.diretrizes, .boxDestaque a.conselho {
+		margin:0 0 0 0
+	}
+	#menu .nav > li:first-child {
+		background: url(../img/icoSeta.gif) 99px 19px no-repeat;
+	}
+	#header .divBusca{
+		float:left;
+		clear:both;
+		margin:0 0 0 0;
+	}
+	#header .divNews{
+		top: 3px;
+		left: 225px;
+		position: absolute;
+	}
+	
+	.biblioteca .input.text .search{
+		width:120px;
+		margin:8px 0 0 0 ;
+	}
+	.biblioteca .input.text label{
+		float:left;
+		clear:both;
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+	}
+	.biblioteca .filtro{
+		padding:0 0 0 42px;
+	}
+	.biblioteca .filtro label{
+		padding:29px 0 0 0;
+	}
+	.biblioteca .filtro a{
+		clear:both;
+		float:left;
+	}
+	.biblioteca .input.text{
+		border:none;
+	}
+	.biblioteca .filtro a{
+		margin-left:0 !important;
+	}
+	
+	.biblioteca ul.list.boxes li .inner-box{
+		background:url(../img/bgBoxBibliotecaPeq.gif) no-repeat;
+		width:260px;
+		height:380px;
+		margin-left:10px;
+	}
+	.biblioteca h5{
+		clear:both;
+		width:200px;
+	}
+	.biblioteca ul.list.boxes li .inner-box .icons img{
+		clear:both;
+	}
+	.biblioteca ul.list.boxes li .inner-box .icons{
+		width:80%;
+		text-align:center;
+	}
+	#footer p.conteudo{
+		padding-left:0;
+		margin:30px 0 0 0;
+	}
+	#footer .redesSociais span{
+		padding:0 0 0 7px;
+	}
+	#footer p.secretaria{
+		padding:10px 0 0 0;
+	}
+	
+}
+
+@media only screen and (max-width: 479px) {
+	.wrap{
+		width:320px;
+	}	
+	.boxDestaque{
+		clear: both;
+		width: 185px;
+		padding: 0 10px 0 12px;
+		margin: 0 0 0 30px;
+	}
+	.divDestaques{
+		height:auto;
+		float:left;
+	}
+	.boxNoticias{
+		background:url(../img/bgNoticiasp.jpg) no-repeat;
+		width:290px;
+	}
+	.boxNoticias p, .boxNoticias h4{
+		width:230px;
+		padding:5px 0 0 0;
+	}
+	.divAgenda{
+		width:320px;
+		height:700px;
+		padding:30px 0 0 0;
+	}
+	.divAgenda .boxAgenda{
+		background:none;
+		margin:0 auto;
+		float:none;
+	}
+	.boxNoticias.centro{
+		margin-top:0;
+	}
+	#header{
+		height:253px;
+	}
+	#menu .nav li{
+		display:block;
+		clear:both;
+		float:left;
+		padding:8px 0 0 0;
+	}
+	#menu .nav li ul{
+		display:block !important;
+		position:relative;
+		padding:0 0 0px 0;
+		float:left;
+		min-height:110px;
+		clear:both;
+	}
+	#menu .menuDestaques li{
+		padding:8px 0 0 0;
+		display:block;
+		float:left;
+		clear:both;
+	}
+	#header .logoPrefeitura a{
+		margin:-14px 0 0 45px;
+	}
+	#header .divBusca{
+		margin:25px 0 0 33px;
+	}
+	#header .divNews{
+		margin:15px 0 0 33px;
+	}
+	#footer{
+		height:520px;
+	}
+	#footer p.secretaria{
+		font-size:10px;
+		width:280px;
+		float:left;
+		padding:15px 0 0 36px;
+	}
+	#footer p.conteudo{
+		font-size:10px;
+		width:250px;
+		float:left;
+		padding-left:35px;
+	}
+	a.veja{
+		margin:0 0 0 -65px;
+	}
+
+	#header .redesSociais{
+		position: absolute;
+		top: 154px;
+		left: -56px;
+	}
+	#menu .nav{
+		padding:14px 0 5px 22px;
+	}
+	#header .divBusca{
+		margin-top:53px;
+	}
+	#header .divNews{
+		box-shadow: none;
+		-webkit-box-shadow:none;
+	}
+	#slider .legenda{
+		font-size: 10px;
+		width: 223px;
+		line-height: 13px;
+		right: 8px;
+		top: 41px;
+		height:35px;
+		padding: 0 0 0 0;
+	}
+	#slider a.saiba {
+		width: 72px;
+		height: 15px;
+		right: 8px;
+		bottom: 0;
+		opacity: 0.9;
+		padding: 0px 0 0 0;
+		font-size: 10px;
+	}
+	#menu .submenu{
+		top:0;
+		left:20px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	#menu .menuPeq{
+		display:block;
+		background:url(../img/icoMenuResp.gif) no-repeat;
+		float:left;
+		width:37px;
+		height:37px;
+		width:160px;
+		color:#333132;
+		clear:both;
+		text-decoration:none;
+		margin:40px 0 0 0;
+		font-size:13px;
+		font-family: 'merriweatherheavy_italic', arial, verdana;		
+		padding:8px 0 0 40px;
+		color:#848484;
+		text-transform:lowercase;
+	}
+	#menu .nav{
+		padding:10px 0 5px 22px;
+		display:none;
+	}
+	#menu .menuDestaques{
+		display:none;
+	}
+	#menu.ativo{
+		height:525px;
+	}
+	#menu .nav > li:first-child {
+		background: url(../img/icoSeta.gif) 99px 19px no-repeat;
+	}
+	.biblioteca .input.text .search{
+		width:120px;
+		margin:8px 0 0 0 ;
+	}
+	.biblioteca .input.text label{
+		float:left;
+		clear:both;
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+	}
+	.biblioteca .filtro{
+		padding:0 0 0 42px;
+	}
+	.biblioteca .filtro label{
+		padding:35px 0 0 0;
+	}
+	.biblioteca .filtro a{
+		clear:both;
+		float:left;
+	}
+	.biblioteca .input.text{
+		border:none;
+	}
+	.biblioteca .filtro a{
+		margin-left:0 !important;
+	}
+	.biblioteca ul.list.boxes li .inner-box{
+		background:url(../img/bgBoxBibliotecaPeq.gif) no-repeat;
+		width:260px;
+		height:380px;
+		margin-left:10px;
+	}
+	.biblioteca h5{
+		clear:both;
+		width:200px;
+	}
+	.biblioteca ul.list.boxes li .inner-box .icons img{
+		clear:both;
+	}
+	.biblioteca ul.list.boxes li .inner-box .icons{
+		width:80%;
+		text-align:center;
+	}
+	#footer .logosFooter img.logoPrefeitura{
+		padding:0 0 0 26px;
+	}
+	#footer .logosFooter img{
+		padding:0 0 0 26px;
+	}
+	#footer .redesSociais span{
+		padding:0 0 0 34px;
+	}
+	#footer .menuFooter{
+		padding:0 0 0 27px;
+	}
+	#footer p.secretaria{
+		padding-top:10px;
+	}
+	#footer p.conteudo{
+		margin:30px 0 0 0;
+	}
+}

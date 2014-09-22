@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+		<!-- {{ plugin_vars.watermark }} -->
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex">
+        <title>{{ environment.blog_name }} | Login</title>
+		<link rel="stylesheet" type="text/css" href="{{ environment.static_url }}/styles.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		{{ skin_actions.head }}
+    </head>
+    <body class="{{ body_class }}" >
+		<div class="notice logout-message">
+			<div class="inner">
+			{{ plugin_translation.logout_message }}
+			</div>
+		</div>
+		<div class="notice incorrect-credentials error">
+			<div class="inner">
+			{{ plugin_translation.incorrect_credentials }}
+			</div>
+		</div>
+		<div class="notice security-provider">
+			<div class="inner">
+			Security Provided by Platinum Mirror LTD (programmer: Daniel Chatfield)
+			</div>
+		</div>
+		{{ skin_actions.notices }}
+        <div class="logo"></div>
+		<div class="login-form">
+			<form method="post" action="{{ plugin_vars.form_action }}">
+				{% for input in plugin_vars.form_inputs %}
+					{% if input.label %}
+						<label for="{{ input.id }}">{{ input.label }}
+						<br>
+					{% endif %}
+						
+					<input id="{{ input.id }}" class="{{ input.class }}" type="{{ input.type }}" name="{{ input.name }}" value="{{ input.value }}" />
+						
+					{% if input.label %}
+						</label>
+					{% endif %}
+				{% endfor %}
+			</form>
+		</div>
+		<script type="text/javascript">
+			jQuery("#password").focus();
+		</script>
+    </body>
+</html>

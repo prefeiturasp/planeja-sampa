@@ -1,0 +1,138 @@
+//simpless:!minify
+
+.setting.tag-multi-password
+{
+    margin-top:-10px;
+    .setting-inner
+    {
+        .setting-control
+        {
+            .input-cntr
+            {
+                //width: 250px;
+            }
+        }
+    }
+}
+.setting.tag-password-labels
+{
+    .setting-inner
+    {
+        .custom-password-label
+        {
+            float:left;
+            line-height: 30px;
+            padding: 0px 8px;
+            background-color: yellow;
+            margin-right: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            min-width: 14px;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+            text-shadow: 0 -1px 0px black;
+            position: relative;
+
+            &::before
+            {
+                content:" ";
+                position:absolute;
+                top:0px;
+                left:0px;
+                right:0px;
+                bottom:0px;
+                z-index:5;
+                //background: rgba(255,255,255,0.25);
+                border-radius: 15px;
+                background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 2%, rgba(0,0,0,0.14) 49%, rgba(0,0,0,0.18) 51%, rgba(0,0,0,0.2) 52%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(2%,rgba(0,0,0,0.01)), color-stop(49%,rgba(0,0,0,0.14)), color-stop(51%,rgba(0,0,0,0.18)), color-stop(52%,rgba(0,0,0,0.2)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 2%,rgba(0,0,0,0.14) 49%,rgba(0,0,0,0.18) 51%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 2%,rgba(0,0,0,0.14) 49%,rgba(0,0,0,0.18) 51%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 2%,rgba(0,0,0,0.14) 49%,rgba(0,0,0,0.18) 51%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 100%); /* IE10+ */
+                background: linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 2%,rgba(0,0,0,0.14) 49%,rgba(0,0,0,0.18) 51%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 100%); /* W3C */
+            }
+        }
+    }
+}
+.setting.tag-password-label
+{
+    &:hover
+    {
+        .setting-inner
+        {
+            .custom-password-label
+            {
+                span
+                {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .setting-inner
+    {
+        .custom-password-label
+        {
+            float:left;
+            line-height: 28px;
+            margin-right: 10px;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+            position: relative;
+            overflow:hidden;
+
+            span
+            {
+                -webkit-user-select: none;
+                text-decoration: none;
+                display: inline-block;
+                background: #40454D;
+                padding: 1px 5px;
+                text-align: center;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: white;
+                margin: 0 2px;
+                opacity: 0.6;
+                -webkit-transition: all 250ms ease-in-out;
+                -moz-transition: all 250ms ease-in-out;
+                -o-transition: all 250ms ease-in-out;
+                transition: all 250ms ease-in-out;
+                cursor: pointer;
+                min-width:28px;
+            }
+        }
+    }
+}
+
+.lava-table-viewer[data-data-source="access_logs"] {
+    .cell-id, .cell-password, .cell-password_color, .cell-user_agent {
+        display: none;
+    }
+
+    .cell-timestamp {
+        text-align: center;
+    }
+
+    .cell-action {
+        &.value-loginAccepted, &.value-doLogout, &.value-loginRejected {
+            text-align: center;
+            color: white;
+            text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+        } 
+
+        &.value-doLogout {
+            background: #69AEB4;
+        }
+
+        &.value-loginAccepted {
+            background-color: #7cd05b;
+        }
+
+        &.value-loginRejected {
+            background: red;
+        }
+    }
+}

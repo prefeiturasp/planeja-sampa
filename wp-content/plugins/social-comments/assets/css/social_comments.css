@@ -1,0 +1,113 @@
+.ui-helper-clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.ui-corner-all {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-corner-top {
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+}
+.ui-tabs { 
+	padding: .2em; zoom: 1; 
+}
+.ui-tabs .ui-tabs-nav {
+	list-style: none;
+	position: relative;
+	padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li { 
+	position: relative;
+	float: left;
+	border-bottom-width: 0 !important;
+	margin: 0 .2em -1px 0;
+	padding: 0;
+}
+.ui-tabs .ui-tabs-nav li a { 
+	float: left;
+	text-decoration: none;
+	padding: .5em 1em;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	padding-bottom: 1px;
+	border-bottom-width: 0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+	cursor: text;
+}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+	cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+	padding: 1em 1.4em;
+	display: block;
+	border-width: 0;
+	background: none;
+}
+.ui-tabs .ui-tabs-hide {
+	display: none !important;
+}
+.ui-tabs .ui-tabs-nav li {
+	position: relative;
+	float: left;
+	border-bottom-width: 0 !important;
+	margin: 0 .2em -1px 0;
+	padding: 0;
+}
+.ui-helper-clearfix {
+	display: block;
+}
+#social_comments_nav{
+	list-style: none;
+	position: relative;
+	padding: .2em .2em 0;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 1px solid #C0C0C0;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+#social_comments_control {
+	background: transparent;
+	border: none;
+}
+#social_comments_control .ui-widget-header {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c0c0c0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+#social_comments_control .ui-tabs-nav .ui-state-default {
+	background: transparent;
+	border: none;
+}
+#social_comments_control .ui-tabs-nav .ui-state-active {
+    background: transparent url(../images/uiTabsArrow.png) no-repeat bottom center;
+    border: none;
+}
+#social_comments_control .ui-tabs-nav .ui-state-default a {
+	color: #c0c0c0;
+}
+#social_comments_control .ui-tabs-nav .ui-state-active a {
+	color: #252723;
+}

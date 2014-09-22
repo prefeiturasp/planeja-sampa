@@ -1,0 +1,12 @@
+<roles>
+<PM>
+  <Users>
+    <Projects_Teams>PM</Projects_Teams>
+  </Users>
+</PM>
+<TeamMember>
+  <Users>
+    <Projects_Teams>TeamMember</Projects_Teams>
+  </Users>
+</TeamMember>
+</roles>
